@@ -10384,7 +10384,7 @@ footer.clean-footer.crev:before {
 
         .value-card {
             text-align: center;
-            padding: 50px 10px;
+            padding: 10px 10px 10px 10px;
             background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
              font-family: 'Poppins', sans-serif;
              font-family: 'Satoshi-Variable';
