@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>CBD Corporation</title>
+    <meta name="keywords" content="Commercial Property, Development Sites, Business Investments">
+    <meta name="description" content="CBD Corporation is a forward-thinking property brand that specialises in commercial property, Business Investments, and development sites.">
+    <meta name="author" content="CBD Corporation">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="icon" type="image/svg+xml" href="assets/images/cbd-favicon.svg">
+    <link rel="icon" type="image/png" href="assets/images/cbd-favicon.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
+    <!-- Font -->
+    <link rel="stylesheet" href="assets/css/satoshi.css">
+    <link rel="stylesheet" href="assets/css/plugins.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style type="text/css">
+    @media screen and (max-width: 768px) {
+        .clock-container {display: none !important;}
+        }
+    @media screen and (max-width: 560) {
+        .clock-container {display: none !important;}
+        }
+    .clock-container {
+      display: flex;
+      gap: 10px;
+    }
+    .clock {
+      text-align: center;
+    }
+    .city {
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    @font-face {
+    font-family: 'digital-7regular';
+    src: url('assets/fonts/digital-time-webfont.woff2') format('woff2'),
+         url('assets/fonts/digital-time-webfont.woff') format('woff'),
+         url('assets/fonts/digital-time.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+    .time {
+        font-family: 'digital-7regular';
+      font-size: 20px;
+      letter-spacing: 2px;
+      width: 10ch;
+      display: inline-block;
+      text-align: center;
+    }
+    </style>
+    <script>
+    function updateTime() {
+      const now = new Date();
+      const options = { hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' };
+
+      document.getElementById("london").textContent =
+        now.toLocaleTimeString('en-GB', { ...options, timeZone: 'Europe/London' });
+
+      document.getElementById("delhi").textContent =
+        now.toLocaleTimeString('en-IN', { ...options, timeZone: 'Asia/Kolkata' });
+
+      document.getElementById("melbourne").textContent =
+        now.toLocaleTimeString('en-AU', { ...options, timeZone: 'Australia/Melbourne' });
+
+      document.getElementById("sydney").textContent =
+        now.toLocaleTimeString('en-AU', { ...options, timeZone: 'Australia/Sydney' });
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+      updateTime(); // initial call
+      setInterval(updateTime, 1000);
+    });
+  </script>
+</head>
+
+<body>
+    <div class="loader-wrap">
+        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+            <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+        </svg>
+
+        <div class="loader-wrap-heading">
+            <div class="load-text">
+                <span>L</span>
+                <span>o</span>
+                <span>a</span>
+                <span>d</span>
+                <span>i</span>
+                <span>n</span>
+                <span>g</span>
+            </div>
+        </div>
+    </div>
+    <div class="cursor"></div>
+    <div class="progress-wrap cursor-pointer">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <div id="smooth-wrapper">
+        <nav class="navbar navbar-expand-lg change blur">
+            <div class="container">
+                <!-- Logo -->
+                <a class="logo icon-img-100" href="index.html">
+                    <img src="assets/image/TFA_logo.png"  alt="TFA">
+                </a>
+                <!-- navbar links -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><span class="rolling-text">Home</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html"><span class="rolling-text">Program</span></a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false"><span class="rolling-text">Services</span>
+                            </a>
+                            <div class="dropdown-menu mega-menu">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <div class="clumn">
+                                                <div class="title">
+                                                    <h6 class="sub-title ls1 pb-20 bord-thin-bottom main-color">Services</h6>
+                                                </div>
+                                                <p class="mb-15">Unlock the value in every dimension of your real estate with integrated, data-led services that support your overall business strategy.</p>
+
+                                                <div class="more ontop full-width">
+                                                    <a href="services.html" style="background:#d2232a; border-radius: 30px; padding: 14px 35px; color:#fff">
+                                                    <span>See Overview <i class="fas fa-arrow-right ml-10"></i></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <div class="clumn">
+                                                <div class="links row">
+                                                    <div class="col-lg-4">
+                                                        <div class="title">
+                                                            <h6 class="sub-title ls1 pb-20 bord-thin-bottom main-color"><a href="services.html">Commercial Property</a></h6>
+                                                        </div>
+                                                        <a class="dropdown-item" href="services.html">Sourcing Commercial Properties</a>
+                                                        <a class="dropdown-item" href="services.html">Leasing Commercial Properties</a>
+                                                        <a class="dropdown-item" href="services.html">Selling Commercial Properties</a>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="title">
+                                                            <h6 class="sub-title ls1 pb-20 bord-thin-bottom main-color"><a href="services.html">Business Investments</a></h6>
+                                                        </div>
+                                                        <a class="dropdown-item" href="services.html">Personalised Business Investments Services</a>
+                                                        <a class="dropdown-item" href="services.html">Expertise Across Multiple Industries</a>
+                                                        <a class="dropdown-item" href="services.html">Custom Solutions for Every Client</a>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="title">
+                                                            <h6 class="sub-title ls1 pb-20 bord-thin-bottom main-color"><a href="services.html">Development Sites</a></h6>
+                                                        </div>
+                                                        <a class="dropdown-item" href="services.html">Identifying Growth Sites</a>
+                                                        <a class="dropdown-item" href="services.html">Market & Local Insight</a>
+                                                        <a class="dropdown-item" href="services.html">Securing Land Opportunities</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li> -->
+                        <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html"><span class="rolling-text">Contact Us</span></a>
+                        </li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="topnav">
+                    <div class="menu-icon clock-container  p-0">
+                        <div class="clock">
+                          <div class="city">LONDON</div>
+                          <div class="time" id="london">88:88:88</div>
+                        </div>
+                        <div class="clock">
+                          <div class="city">DELHI</div>
+                          <div class="time" id="delhi">88:88:88</div>
+                        </div>
+                        <div class="clock">
+                          <div class="city">MELBOURNE</div>
+                          <div class="time" id="melbourne">88:88:88</div>
+                        </div>
+                        <div class="clock">
+                          <div class="city">SYDNEY</div>
+                          <div class="time" id="sydney">88:88:88</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="topnav">
+                    <div class="menu-icon cursor-pointer">
+                        <span class="icon ti-menu"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="hamenu">
+            <div class="logo icon-img-100">
+                <a href="index.html"><img src="assets/images/Tfa_logo (2).png" alt=""></a>
+            </div>
+            <div class="close-menu cursor-pointer ti-close"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="menu-text">
+                            <div class="text">
+                                <h2>INDEX</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="menu-links">
+                            <ul class="main-menu rest">
+                                <li>
+                                    <div class="o-hidden">
+                                        <a href="index.html" class="link"><span class="fill-text" data-text="Home">Home</span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="o-hidden">
+                                        <a href="about-us.html" class="link"><span class="fill-text" data-text="About Us">About Us</span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="o-hidden">
+                                        <div class="link cursor-pointer dmenu"><span class="fill-text" data-text="Services">Services</span><i></i>
+                                        </div>
+                                    </div>
+                                    <div class="sub-menu">
+                                        <ul>
+                                            <li><a class="sub-link" href="services.html">Commercial Property</a></li>
+                                            <li><a class="sub-link" href="services.html">Business Investments</a></li>
+                                            <li><a class="sub-link" href="services.html">Development Sites</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="o-hidden">
+                                        <a href="contact-us.html" class="link"><span class="fill-text" data-text="Contact Us">Contact Us</span></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="cont-info">
+                            <div class="item mb-50">
+                                <h6 class="sub-title mb-15 main-color">Address</h6>
+                                <h6 class="mb-10 fz-20">CBD Melbourne</h4>
+                                <h6 class="mb-15 fz-16">Level 10, 440 Collins Street, Melbourne <br/>Victoria 3000</h5>
+                                <h6 class="mb-10 fz-20">CBD London</h4>
+                                <h6 class="mb-15 fz-16">40 Bank Street, Canary Wharf <br/>London E14 5NR</h5>
+                                <h6 class="mb-10 fz-20">CBD Delhi</h4>
+                                <h6 class="fz-16">DLF Cyber City, Sector 24, Gurugram, <br/>Haryana - 122002</h5>
+                            </div>
+                            <div class="item mb-50">
+                                <h6 class="sub-title mb-15 main-color">Social Media</h6>
+                                <ul class="rest d-flex align-items-center">
+                                    <li class="cursor-pointer">
+                                        <a href="https://www.facebook.com/profile.php?id=61575706232990" class="hover-anim" target="_blank"><i class="fab fa-facebook-f"></i> </a>
+                                    </li>
+                                    <li class="cursor-pointer ml-30">
+                                        <a href="https://www.linkedin.com/company/cbd-corporation/posts/?feedView=all&viewAsMember=true" class="hover-anim" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                    <li class="cursor-pointer ml-30">
+                                        <a href="#0" class="hover-anim"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li class="cursor-pointer ml-30">
+                                        <a href="#0" class="hover-anim"><i class="fab fa-youtube"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="item mb-40">
+                                <h6 class="sub-title mb-15 main-color">Contact Us</h6>
+                                <h5><a href="mailto:info@cbdcorporation.com.au">info@cbdcorporation.com.au</a></h5>
+                                <h5 class="underline mt-10"><a href="tel:+61402482393">+61 402 482 393</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="smooth-content">
+            <main class="main-bg">
+                <header class="slider slider-prlx">
+                    <div class="swiper-container parallax-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="bg-img valign" data-background="assets/image/slider1.png"
+                                    data-overlay-dark="2">
+                                    <div class="container">
+                                        <div class="caption text-center">
+                                            <h2 class="mb-30" data-swiper-parallax="-2000">Australian-Built Football Academy</h2>
+                                            <h1>
+                                                <span data-swiper-parallax="-1000">Designed for young athletes with global dreams.</span>
+                                            </h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="bg-img valign" data-background="assets/image/slider2.png"
+                                    data-overlay-dark="3">
+                                    <div class="container">
+                                        <div class="caption text-center">
+                                        <h2 class="mb-30" data-swiper-parallax="-2000">Your Local Football Development Hub</h2>
+                                            <h1>
+                                                <span data-swiper-parallax="-1000">Training future stars, right from the grassroots.</span>
+                                            </h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="bg-img valign" data-background="assets/image/slider3.png"
+                                    data-overlay-dark="3">
+                                    <div class="container">
+                                        <div class="caption text-center">
+                                            <h2 class="mb-30" data-swiper-parallax="-2000">Building Confidence Through the Game</h2>
+                                            <h1>
+                                                <span data-swiper-parallax="-1000">Skills, discipline & resilience — on and off the pitch.</span>
+                                            </h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slider setting -->
+                    <div class="slider-contro main-bg">
+                        <div class="swiper-button-prev swiper-nav-ctrl cursor-pointer">
+                            <div>
+                                <span>Prev</span>
+                            </div>
+                        </div>
+                        <div class="ml-30 mr-30">
+                            <span>/</span>
+                        </div>
+                        <div class="swiper-button-next swiper-nav-ctrl cursor-pointer">
+                            <div>
+                                <span>Next</span>
+                            </div>
+                        </div>
+
+                        <div class="shap-left-bottom">
+                            <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                <path
+                                    d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                    fill="#fff"></path>
+                            </svg>
+                        </div>
+                        <div class="shap-right-top">
+                            <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                <path
+                                    d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                    fill="#fff"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </header>
+                <section class="section-padding">
+                    <div class="container"><!--class- bord-thin-bottom-->
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <h3 class="mb-50 main-color">We are <br>Total Football Academie</h3>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="text">
+                                    <h5 class="mb-30 fw-400 line-height-40">Total Football Academie is a future-focused football training institution dedicated to nurturing young talent from the grassroots level.</h5>
+                                    <p class="fz-18 mb-15">Driven by a passion for building strong, skilled, and intelligent footballers, we deliver value through structured coaching programs and a holistic development model.
+                                    </p>
+                                    <p class="fz-18 mb-7">
+                                    At TFA, we offer more than just training — we build confidence, discipline, and pathways to success, both on and off the pitch.</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="about-crev section-padding position-re" data-scroll-index="2">
+                    <div class="container">
+                        <div class="row lg-marg">
+                            <div class="col-lg-6">
+                                <div class="left-block mt-100 md-mb50">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <div class="info">
+                                                <!--<h3 class=" main-color fz-50 line-height-1">12</h3>
+                                                <p class="nowrap">Years of<br> Experience</p>-->
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="img fit-img radius-30">
+                                                <img src="assets/image/IMG_2253.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mz-shap"><svg height="100%" viewBox="0 0 610 547" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M116.134 529.548C116.134 538.642 123.506 546.015 132.6 546.015H211.63C211.635 546.015 211.638 546.011 211.638 546.007V546.007C211.638 546.003 211.642 545.999 211.646 545.999H592.691C601.786 545.999 609.158 538.627 609.158 529.533L609.157 251.366C609.157 242.272 601.785 234.899 592.691 234.899H401.097C392.003 234.899 384.631 227.527 384.631 218.433V112.465C384.631 103.371 377.259 95.999 368.164 95.999H214.466C205.372 95.999 198 88.6268 198 79.5327V16.4662C198 7.37219 190.628 0 181.534 0H88.4662C79.3722 0 72 7.37219 72 16.4662V104.534C72 113.628 79.3722 121 88.4662 121H166.917C176.011 121 183.383 128.372 183.383 137.466V273.565C183.383 282.659 176.011 290.031 166.917 290.031H116.134H116.134H16.5634C7.46936 290.031 0.0971666 297.403 0.0971666 306.497V445.923C0.0971666 455.017 7.46935 462.39 16.5634 462.39H99.6677C108.762 462.39 116.134 469.762 116.134 478.856V529.548Z"
+                                                fill="#eee"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 valign">
+                                <div class="content full-width">
+                                    <div class="sec-head mb-30">
+                                        <h3 class="main-color">What Sets Us Apart</h3>
+                                        <div class="text mt-15">
+                                            <p class="fz-18 mb-15">Game Intelligence, Not Just Training: At Total Football Academie, we go beyond drills — we shape thinking footballers. Our programs build players who read the game, adapt under pressure, and make smarter decisions on the pitch.</p>
+                                            <p class="fz-18 mb-15">We take a personalised approach, understanding each player's journey and tailoring coaching to unlock their full potential — whether they’re beginners or elite prospects.</p>
+                                            <p class="fz-18 mb-15">Our experienced FFA-licensed coaches bring national and international insights, ensuring players are ready for the modern game — technically, tactically, and mentally.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line-overlay opacity-7">
+                        <svg viewBox="0 0 1728 1101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M-43 773.821C160.86 662.526 451.312 637.01 610.111 733.104C768.91 829.197 932.595 1062.9 602.782 1098.75C272.969 1134.6 676.888 25.4306 1852 1"
+                                style="stroke-dasharray: 3246.53, 0;"></path>
+                        </svg>
+                    </div>
+                </section>
+                 <section class="services section-padding pb-0">
+                    <div class="container">
+                        <div class="sec-head mb-80">
+                            <h6 class="sub-title main-color mb-25">WHAT WE OFFER</h6>
+                            <div class="bord pt-25 bord-thin-top d-flex align-items-center">
+                                <h2 class="fw-600 d-rotate wow text-u ls1">
+                                    <span class="rotate-text">TFA<span class="fw-200">Programs</span></span>
+                                </h2>
+                                <div class="ml-auto">
+                                    <a href="services.html" class="go-more">
+                                        <span class="text">View all Programs</span>
+                                        <span class="icon ti-arrow-top-right"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="item-box radius-15 md-mb50">
+                                    <div class="icon mb-40 opacity-5">
+                                        <img src="assets/images/commercial-icon.png" alt="">
+                                    </div>
+                                    <h5 class="mb-15">Football Kick Off (Ages 5–6)</h5>
+                                    <p>Introduction to the game through fun, movement & teamwork.</p>
+                                    <a href="services.html" class="rmore mt-30">
+                                        <span class="sub-title">View Details</span>
+                                        <img src="assets/imgs/arrow-right.png" alt="" class="icon-img-20 ml-5">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="item-box radius-15">
+                                    <div class="icon mb-40 opacity-5">
+                                        <img src="assets/images/trust-icon.png" alt="">
+                                    </div>
+                                    <h5 class="mb-15">Football Basics (Ages 7–9)</h5>
+                                    <p>Build core skills with dribbling, passing & small games.</p>
+                                    <a href="services.html" class="rmore mt-30">
+                                        <span class="sub-title">View Details</span>
+                                        <img src="assets/imgs/arrow-right.png" alt="" class="icon-img-20 ml-5">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="item-box radius-15 md-mb50">
+                                    <div class="icon mb-40 opacity-5">
+                                        <img src="assets/images/construction-site.png" alt="">
+                                    </div>
+                                    <h5 class="mb-15">Skills Development (Ages 10–11)</h5>
+                                    <p>Advance techniques and smart decision-making on the field.</p>
+                                    <a href="services.html" class="rmore mt-30">
+                                        <span class="sub-title">View Details</span>
+                                        <img src="assets/imgs/arrow-right.png" alt="" class="icon-img-20 ml-5">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+               
+
+
+                <section class="about-crev section-padding position-re" data-scroll-index="2">
+                    
+                    <div class="container">
+                        <div class="row lg-marg">
+                            <div class="col-lg-6 valign">
+                                <div class="content full-width">
+                                    <div class="sec-head mb-30">
+                                        <h3 class="main-color">TFA – Head Coach / Technical Director</h3>
+                                        <div class="text mt-15">
+                                            <h2 class="fw-600 d-rotate wow text-u ls1">
+                                             <span class="rotate-text">Sat Sanghera<span class="fw-200"></span></span>
+                                            </h2>
+                                            <p class="fz-18 mb-15">Sat Sanghera is a passionate and experienced football coach with a strong track record in youth development and high-performance environments. He has coached the AFA Australian Youth Futsal Team, supporting thegrowth of emerging talent on both national and international stages.</p>
+                                            <p class="fz-18 mb-15">With a lifelong connection to the game, Sat blends technical knowledge, tactical insight, and strong communication to bring the best out of his players. His coaching philosophy focuses on building confident, intelligent footballers through discipline, teamwork, and a deep understanding of the game.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="left-block mt-100 md-mb50">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <div class="info">
+                                                <!--<h3 class=" main-color fz-50 line-height-1">12</h3>
+                                                <p class="nowrap">Years of<br> Experience</p>-->
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="img fit-img radius-30">
+                                                <img src="assets/image/coach.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mz-shap"><svg height="100%" viewBox="0 0 610 547" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M116.134 529.548C116.134 538.642 123.506 546.015 132.6 546.015H211.63C211.635 546.015 211.638 546.011 211.638 546.007V546.007C211.638 546.003 211.642 545.999 211.646 545.999H592.691C601.786 545.999 609.158 538.627 609.158 529.533L609.157 251.366C609.157 242.272 601.785 234.899 592.691 234.899H401.097C392.003 234.899 384.631 227.527 384.631 218.433V112.465C384.631 103.371 377.259 95.999 368.164 95.999H214.466C205.372 95.999 198 88.6268 198 79.5327V16.4662C198 7.37219 190.628 0 181.534 0H88.4662C79.3722 0 72 7.37219 72 16.4662V104.534C72 113.628 79.3722 121 88.4662 121H166.917C176.011 121 183.383 128.372 183.383 137.466V273.565C183.383 282.659 176.011 290.031 166.917 290.031H116.134H116.134H16.5634C7.46936 290.031 0.0971666 297.403 0.0971666 306.497V445.923C0.0971666 455.017 7.46935 462.39 16.5634 462.39H99.6677C108.762 462.39 116.134 469.762 116.134 478.856V529.548Z"
+                                                fill="#eee"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="line-overlay opacity-7">
+                        <svg viewBox="0 0 1728 1101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M-43 773.821C160.86 662.526 451.312 637.01 610.111 733.104C768.91 829.197 932.595 1062.9 602.782 1098.75C272.969 1134.6 676.888 25.4306 1852 1"
+                                style="stroke-dasharray: 3246.53, 0;"></path>
+                        </svg>
+                    </div>
+                </section>
+
+                <section class="img-scale">
+                   <div class="image" data-overlay-dark="2">
+                    <div class="img">
+                        <img id="grow" src="assets/images/cta-bg.jpg" data-speed="0.2" data-lag="0" alt="">
+                    </div>
+                    <div class="text-u text-center ontop"> 
+                        <h2 class="fz-48 fw-300"> <span class="fw-600">DISCOVER THE FUTURE OF</span> <span class="fw-600">FOOTBALL WITH TFA</span></h2>
+                        <div class="more ontop full-width">
+                            <a href="contact-us.html" style="text-decoration: underline;">
+                                <span class="mt-15">JOIN THE ACADEMY <i class="fas fa-arrow-right ml-10"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                </section>
+                <!-- <section class="blog-list-half section-padding sub-bg">
+                    <div class="container">
+                        <div class="sec-head mb-80">
+                            <h6 class="sub-title main-color mb-25">Our Blog</h6>
+                            <div class="bord pt-25 bord-thin-top d-flex align-items-center">
+                                <h2 class="fw-600 text-u ls1">Read Latest <span class="fw-200">News</span></h2>
+                                <div class="ml-auto">
+                                    <a href="#" class="go-more">
+                                        <span class="text">View all posts</span>
+                                        <span class="icon ti-arrow-top-right"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="item main-bg md-mb50">
+                                    <div class="row rest">
+                                        <div class="col-lg-6 col-md-5 img rest">
+                                            <img src="assets/images/commercial-blog.jpg" alt="" class="img-post">
+                                            <div class="author d-flex align-items-center">
+                                                <div>
+                                                    <div class="fit-img icon-img-50 circle">
+                                                        <img src="assets/images/author.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="ml-15 fz-14">
+                                                    <div><span class="opacity-7">Posted by</span><br>CBD</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-7 cont valign">
+                                            <div class="full-width">
+                                                <h5>
+                                                    <a href="melbournes-commercial-warehouse-driving-value-for-investors.html">Melbourne’s off-the-plan commercial warehouse creating uplifting value for investors:</a>
+                                                </h5>
+                                                <span class="date fz-12 ls1 text-u opacity-7 mt-40">May 15,
+                                                    2025</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="item main-bg">
+                                    <div class="row rest">
+                                        <div class="col-lg-6 col-md-5 img rest">
+                                            <img src="assets/images/property-business-opportunities-blog.jpg" alt="" class="img-post">
+                                            <div class="author d-flex align-items-center">
+                                                <div>
+                                                    <div class="fit-img icon-img-50 circle">
+                                                        <img src="assets/images/author.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="ml-15 fz-14">
+                                                    <div><span class="opacity-7">Posted by</span><br>CBD</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-7 cont valign">
+                                            <div class="full-width">
+                                                <h5>
+                                                    <a href="property-related-business-opportunities-in-melbourne.html">3 niche property-related business opportunities in Melbourne.<br/><br/></a>
+                                                </h5>
+                                                <span class="date fz-12 ls1 text-u opacity-7 mt-40">May 15,
+                                                    2025</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section> -->
+           
+                <section class="values-section">
+        <div class="container">
+            <h2 class="section-title">Values and Vision</h2>
+            
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="icon-container">
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M6 3h2l2 2h8a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/>
+                            <path d="M8 21l-2-2 2-2 2 2-2 2z"/>
+                            <path d="M16 21l-2-2 2-2 2 2-2 2z"/>
+                            <path d="M12 17l-2-2 2-2 2 2-2 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="value-title">Excellence</h3>
+                    <p class="value-description">We pursue the highest standards in everything we do – from training and education to behavior and performance – striving for continuous improvement on and off the pitch.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="icon-container">
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M20 6L9 17l-5-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="value-title">Integrity</h3>
+                    <p class="value-description">We act with honesty, transparency, and respect. We build trust by doing the right thing, even when no one is watching.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="icon-container">
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="value-title">Development</h3>
+                    <p class="value-description">We prioritize long-term player growth over short-term results, nurturing technical, physical, tactical, and personal development through individualized support and mentorship.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="icon-container">
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                    </div>
+                    <h3 class="value-title">Resilience</h3>
+                    <p class="value-description">We foster mental toughness, adaptability, and the courage to overcome challenges – qualities essential for success in football and life.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="icon-container">
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3 class="value-title">Unity</h3>
+                    <p class="value-description">We cultivate a strong team culture where diversity is embraced, roles are valued, and collective success is celebrated above individual accolades.</p>
+                </div>
+            </div>
+        </div>
+                 </section>
+
+
+            </main>
+            <footer class="min-footer2">
+                <div class="footer-container">
+                    <div class="container pt-60 pb-25 ontop">
+                        <div class="text-center mb-30">
+                            <h6 class="sub-title mb-15 main-color">Get In Touch</h6>
+                            <h2 class="fz-100 text-u ls1">
+                                <a href="contact-us.html">Let's Connect</a>
+                            </h2>
+                        </div>
+                        <div class="row mt-40 pt-25 bord-thin-top">
+                            <div class="col-lg-4 col-md-6 md-mb15 d-flex align-items-center">
+                                <ul class="rest d-flex align-items-center">
+                                    <li class="cursor-pointer">
+                                        <a href="https://www.facebook.com/profile.php?id=61575706232990" class="hover-anim" target="_blank"><i class="fab fa-facebook-f"></i> </a>
+                                    </li>
+                                    <li class="cursor-pointer ml-30">
+                                        <a href="https://www.linkedin.com/company/cbd-corporation/posts/?feedView=all&viewAsMember=true" class="hover-anim" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                    <li class="cursor-pointer ml-30">
+                                        <a href="#0" class="hover-anim"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li class="cursor-pointer ml-30">
+                                        <a href="#0" class="hover-anim"><i class="fab fa-youtube"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 order-md-3 d-flex justify-content-center align-items-center">
+                                <div class="text-center">
+                                    <p class="fz-14">Copyright © 2025 TFA . All rights reserved.</p>
+                                    <p class="fz-14">Developed by <a href="#" target="_blank">Austratech</a>
+                                    <br/><span class="fz-10">Disclaimer: Images for illustration purposes only</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 md-mb15 order-md-2">
+                                <div class="links d-flex justify-content-end">
+                                    <a href="index.html"><img src="assets/images/Tfa_logo (2).png" style="max-width:100px !important" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-3.4.0.min.js"></script>
+
+    <!-- plugins -->
+    <script src="assets/js/plugins.js"></script>
+
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollSmoother.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/smoother-script.js"></script>
+
+    <!-- custom scripts -->
+    <script src="assets/js/scripts.js"></script>
+
+
+</body>
+
+</html>

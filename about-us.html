@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>CBD Corporation</title>
+    <meta name="keywords" content="Commercial Property, Development Sites, Business Broking">
+    <meta name="description" content="CBD Corporation is a forward-thinking property brand that specialises in commercial property, business broking, and development sites.">
+    <meta name="author" content="CBD Corporation">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="icon" type="image/svg+xml" href="assets/images/cbd-favicon.svg">
+    <link rel="icon" type="image/png" href="assets/images/cbd-favicon.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
+    <!-- Font -->
+    <link rel="stylesheet" href="assets/css/satoshi.css">
+    <link rel="stylesheet" href="assets/css/plugins.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style type="text/css">
+        @media screen and (max-width: 768px) {
+        .clock-container {display: none !important;}
+        }
+    @media screen and (max-width: 560) {
+        .clock-container {display: none !important;}
+        }
+    .clock-container {
+      display: flex;
+      gap: 10px;
+    }
+    .clock {
+      text-align: center;
+    }
+    .city {
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    @font-face {
+    font-family: 'digital-7regular';
+    src: url('assets/fonts/digital-time-webfont.woff2') format('woff2'),
+         url('assets/fonts/digital-time-webfont.woff') format('woff'),
+         url('assets/fonts/digital-time.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+    .time {
+        font-family: 'digital-7regular';
+      font-size: 20px;
+      letter-spacing: 2px;
+      width: 10ch;
+      display: inline-block;
+      text-align: center;
+    }
+    </style>
+    <script>
+    function updateTime() {
+      const now = new Date();
+      const options = { hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' };
+
+      document.getElementById("london").textContent =
+        now.toLocaleTimeString('en-GB', { ...options, timeZone: 'Europe/London' });
+
+      document.getElementById("delhi").textContent =
+        now.toLocaleTimeString('en-IN', { ...options, timeZone: 'Asia/Kolkata' });
+
+      document.getElementById("melbourne").textContent =
+        now.toLocaleTimeString('en-AU', { ...options, timeZone: 'Australia/Melbourne' });
+
+      document.getElementById("sydney").textContent =
+        now.toLocaleTimeString('en-AU', { ...options, timeZone: 'Australia/Sydney' });
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+      updateTime(); // initial call
+      setInterval(updateTime, 1000);
+    });
+  </script>
+</head>
+
+<body>
+    <div class="loader-wrap">
+        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+            <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+        </svg>
+
+        <div class="loader-wrap-heading">
+            <div class="load-text">
+                <span>L</span>
+                <span>o</span>
+                <span>a</span>
+                <span>d</span>
+                <span>i</span>
+                <span>n</span>
+                <span>g</span>
+            </div>
+        </div>
+    </div>
+    <div class="cursor"></div>
+    <div class="progress-wrap cursor-pointer">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <div id="smooth-wrapper">
+         <nav class="navbar navbar-expand-lg change blur">
+            <div class="container">
+                <!-- Logo -->
+                <a class="logo icon-img-100" href="index.html">
+                    <img src="assets/images/Tfa_logo (2).png" alt="cbd">
+                </a>
+                <!-- navbar links -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><span class="rolling-text">Home</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html"><span class="rolling-text">About Us</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false"><span class="rolling-text">Services</span>
+                            </a>
+                            <div class="dropdown-menu mega-menu">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <div class="clumn">
+                                                <div class="title">
+                                                    <h6 class="sub-title ls1 pb-20 bord-thin-bottom main-color">Services</h6>
+                                                </div>
+                                                <p class="mb-15">Unlock the value in every dimension of your real estate with integrated, data-led services that support your overall business strategy.</p>
+
+                                                <div class="more ontop full-width">
+                                                    <a href="services.html" style="background:#d2232a; border-radius: 30px; padding: 14px 35px; color:#fff">
+                                                    <span>See Overview <i class="fas fa-arrow-right ml-10"></i></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <div class="clumn">
+                                                <div class="links row">
+                                                    <div class="col-lg-4">
+                                                        <div class="title">
+                                                            <h6 class="sub-title ls1 pb-20 bord-thin-bottom main-color"><a href="services.html">Commercial Property</a></h6>
+                                                        </div>
+                                                        <a class="dropdown-item" href="services.html">Sourcing Commercial Properties</a>
+                                                        <a class="dropdown-item" href="services.html">Leasing Commercial Properties</a>
+                                                        <a class="dropdown-item" href="services.html">Selling Commercial Properties</a>
+                                                    </div>                                                    
+                                                    <div class="col-lg-4">
+                                                        <div class="title">
+                                                            <h6 class="sub-title ls1 pb-20 bord-thin-bottom main-color"><a href="services.html">Business Investments</a></h6>
+                                                        </div>
+                                                        <a class="dropdown-item" href="services.html">Personalised Business Broking Services</a>
+                                                        <a class="dropdown-item" href="services.html">Expertise Across Multiple Industries</a>
+                                                        <a class="dropdown-item" href="services.html">Custom Solutions for Every Client</a>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="title">
+                                                            <h6 class="sub-title ls1 pb-20 bord-thin-bottom main-color"><a href="services.html">Development Sites</a></h6>
+                                                        </div>
+                                                        <a class="dropdown-item" href="services.html">Identifying Growth Sites</a>
+                                                        <a class="dropdown-item" href="services.html">Market & Local Insight</a>
+                                                        <a class="dropdown-item" href="services.html">Securing Land Opportunities</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html"><span class="rolling-text">Contact Us</span></a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="topnav">
+                    <div class="menu-icon clock-container p-0">
+                        <div class="clock">
+                          <div class="city">LONDON</div>
+                          <div class="time" id="london">88:88:88</div>
+                        </div>
+                        <div class="clock">
+                          <div class="city">DELHI</div>
+                          <div class="time" id="delhi">88:88:88</div>
+                        </div>
+                        <div class="clock">
+                          <div class="city">MELBOURNE</div>
+                          <div class="time" id="melbourne">88:88:88</div>
+                        </div>
+                        <div class="clock">
+                          <div class="city">SYDNEY</div>
+                          <div class="time" id="sydney">88:88:88</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="topnav">
+                    <div class="menu-icon cursor-pointer">
+                        <span class="icon ti-menu"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="hamenu">
+            <div class="logo icon-img-100">
+                <a href="index.html"><img src="assets/images/Tfa_logo (2).png" alt=""></a>
+            </div>
+            <div class="close-menu cursor-pointer ti-close"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="menu-text">
+                            <div class="text">
+                                <h2>Index</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="menu-links">
+                            <ul class="main-menu rest">
+                                <li>
+                                    <div class="o-hidden">
+                                        <a href="index.html" class="link"><span class="fill-text"
+                                                data-text="Home">Home</span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="o-hidden">
+                                        <a href="about-us.html" class="link"><span class="fill-text"
+                                                data-text="About Us">About Us</span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="o-hidden">
+                                        <div class="link cursor-pointer dmenu"><span class="fill-text"
+                                                data-text="Services">Services</span> <i></i>
+                                        </div>
+                                    </div>
+                                    <div class="sub-menu">
+                                        <ul>
+                                            <li>
+                                                <a class="sub-link" href="services.html">Commercial Property</a>
+                                            </li>
+                                            <li>
+                                                <a class="sub-link" href="services.html">Business Investments</a>
+                                            </li>
+                                            <li>
+                                                <a class="sub-link" href="services.html">Development Sites</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="o-hidden">
+                                        <a href="contact-us.html" class="link"><span class="fill-text"
+                                                data-text="Contact Us">Contact Us</span></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="cont-info">
+                            <div class="item mb-50">
+                                <h6 class="sub-title mb-15 main-color">Address</h6>
+                                <h6 class="mb-10 fz-20">CBD Melbourne</h4>
+                                <h6 class="mb-15 fz-16">Level 10, 440 Collins Street, Melbourne <br/>Victoria 3000</h5>
+                                <h6 class="mb-10 fz-20">CBD London</h4>
+                                <h6 class="mb-15 fz-16">40 Bank Street, Canary Wharf <br/>London E14 5NR</h5>
+                                <h6 class="mb-10 fz-20">CBD Delhi</h4>
+                                <h6 class="fz-16">DLF Cyber City, Sector 24, Gurugram, <br/>Haryana - 122002</h5>
+                            </div>
+                            <div class="item mb-50">
+                                <h6 class="sub-title mb-15 main-color">Social Media</h6>
+                                <ul class="rest d-flex align-items-center">
+                                    <li class="cursor-pointer">
+                                        <a href="https://www.facebook.com/profile.php?id=61575706232990" class="hover-anim" target="_blank"><i class="fab fa-facebook-f"></i> </a>
+                                    </li>
+                                    <li class="cursor-pointer ml-30">
+                                        <a href="https://www.linkedin.com/company/cbd-corporation/posts/?feedView=all&viewAsMember=true" class="hover-anim" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                    <li class="cursor-pointer ml-30">
+                                        <a href="#0" class="hover-anim"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li class="cursor-pointer ml-30">
+                                        <a href="#0" class="hover-anim"><i class="fab fa-youtube"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="item mb-40">
+                                <h6 class="sub-title mb-15 main-color">Contact Us</h6>
+                                <h5><a href="mailto:info@cbdcorporation.com.au">info@cbdcorporation.com.au</a></h5>
+                                <h5 class="underline mt-10"><a href="tel:+61402482393">+61 402 482 393</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="smooth-content">
+            <main class="main-bg">
+                <header class="page-header-cerv bg-img section-padding" data-background="assets/images/sub-banner-2.jpg"
+                    data-overlay-dark="2">
+                    <div class="container pt-100 ontop">
+                        <div class="text-center">
+                            <h1 class="fz-100">About Us.</h1>
+                            <div class="mt-15">
+                                <a href="home-main.html">Home</a>
+                                <span class="padding-rl-20">|</span>
+                                <span class="main-color">About Us</span>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                 <section class="">
+                    <div class="container section-padding">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <h2 class="sub-title main-color fz-24">About CBD</h2>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="text">
+                                    <h5 class="mb-30 fw-400 line-height-40">CBD Corporation is a forward-thinking company that specialises in commercial property, business broking, and development sites.</h5>
+                                    <p class="fz-18 mb-10">Driven by a passion for transforming potential into performance, we focus on delivering value to our partners through strategic investments in both tangible and intangible assets.
+                                    </p>
+                                    <p class="fz-18 mb-10">
+                                    At CBD Corporation, we offer more than just expertise and knowledge — we cultivate environments that inspire growth, foster innovation, and create lasting value.</p>
+
+                                    <p class="fz-18">We are your partner in property solutions, offering tailored advice, unique development opportunities, and insightful broking services that unlock value for our clients, stakeholders, and communities.</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="about">
+                    <div class="container section-padding bord-thin-top">
+                        <div class="row md-marg">
+                            <div class="col-lg-6">
+                                <div class="cont md-mb50">
+                                    <h6 class="sub-title main-color fz-18 mb-15">Our Mission</h6>
+                                    <h3>Creating Value in Every Property and Business Opportunity</h3><!--Your Trusted Partner in Property Solutions.-->
+                                    <div class="d-flex align-items-end mt-100">
+                                        <div>
+                                            <a href="page-contact.html" class="d-flex align-items-end">
+                                                <span class="sub-title nowrap">Contact Us</span>
+                                                <span class="fz-70 line-height-45 ti-arrow-top-right"></span>
+                                            </a>
+                                        </div>
+                                        <div class="ml-80">
+                                            <p>To be your premier partner in property solutions, offering tailored advice, unique development opportunities, and insightful broking services that unlock value for our clients, stakeholders, and communities.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="img-vid">
+                                    <img src="assets/images/our-mission.jpg" alt="">
+                                    <div class="curv-butn main-bg">
+                                        <div class="shap-left-top">
+                                            <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                class="w-11 h-11">
+                                                <path
+                                                    d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                    fill="#fff"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="shap-right-bottom">
+                                            <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                class="w-11 h-11">
+                                                <path
+                                                    d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                                    fill="#fff"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="about-crev section-padding position-re">
+                    <div class="container">
+                        <div class="row lg-marg">
+                            <div class="col-lg-6">
+                                <div class="left-block mt-100 md-mb50">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <div class="info">
+                                                 <!--cbd-->
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="img fit-img radius-30">
+                                                <img src="assets/images/what-sets-us-apart.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mz-shap"><svg height="100%" viewBox="0 0 610 547" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M116.134 529.548C116.134 538.642 123.506 546.015 132.6 546.015H211.63C211.635 546.015 211.638 546.011 211.638 546.007V546.007C211.638 546.003 211.642 545.999 211.646 545.999H592.691C601.786 545.999 609.158 538.627 609.158 529.533L609.157 251.366C609.157 242.272 601.785 234.899 592.691 234.899H401.097C392.003 234.899 384.631 227.527 384.631 218.433V112.465C384.631 103.371 377.259 95.999 368.164 95.999H214.466C205.372 95.999 198 88.6268 198 79.5327V16.4662C198 7.37219 190.628 0 181.534 0H88.4662C79.3722 0 72 7.37219 72 16.4662V104.534C72 113.628 79.3722 121 88.4662 121H166.917C176.011 121 183.383 128.372 183.383 137.466V273.565C183.383 282.659 176.011 290.031 166.917 290.031H116.134H116.134H16.5634C7.46936 290.031 0.0971666 297.403 0.0971666 306.497V445.923C0.0971666 455.017 7.46935 462.39 16.5634 462.39H99.6677C108.762 462.39 116.134 469.762 116.134 478.856V529.548Z"
+                                                fill="#f5f7f9"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 valign">
+                                <div class="content full-width">
+                                    <div class="sec-head mb-30">
+                                        <h4 class="sub-title mb-15 main-color fz-18">What Sets Us Apart</h4>
+                                    </div>
+                                    <div class="row justify-content-end">
+                                        <div class="col-lg-11">
+                                            <div class="text">
+                                                <p class="mb-15">Deep Market Insight: We pride ourselves on our unmatched expertise in commercial property and development sites. Our team consists of experienced professionals who bring a deep understanding of local and international markets, helping our clients navigate complexities and seize untapped potential.</p>
+                                                <p class="mb-15">
+                                                We offer highly personalized service, taking the time to understand your unique needs, whether you’re looking for a development site, need expert advice on business broking, or are seeking investment opportunities our approach is flexible, adaptive, and built around your investment goals.
+                                                </p>
+                                                <p>Our clients gain exclusive access to off-market deals and hidden gems — assets that are not widely available to the general public. This privileged access enables you to invest or sell before the wider market catches on, giving you a competitive edge.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="testimonials">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="sec-head">
+                                    <h6 class="sub-title main-color mb-15">Testimonials</h6>
+                                    <h3 class="fw-600 text-u ls1">What People <span class="fw-200">Say?</span></h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 position-re">
+                                <div class="testim-swiper" data-carousel="swiper" data-loop="true" data-space="30">
+                                    <div id="content-carousel-container-unq-testim" class="swiper-container"
+                                        data-swiper="container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <div class="content">
+                                                        <div class="text">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="256.721"
+                                                                height="208.227" viewBox="0 0 256.721 208.227"
+                                                                class="qout-svg">
+                                                                <path data-name="Path"
+                                                                    d="M-23.723-530.169v97.327H-121.05v-68.7q0-40.076,13.359-73.472T-62.845-639.9l36.259,28.625Q-63.8-570.244-68.57-530.169Zm158.395,0v97.327H37.345v-68.7q0-40.076,13.359-73.472T95.55-639.9l36.259,28.625Q94.6-570.244,89.825-530.169Z"
+                                                                    transform="translate(121.55 640.568)" fill="none"
+                                                                    stroke="#fff" stroke-width="1" opacity="0.322">
+                                                                </path>
+                                                            </svg>
+                                                            <p class="fz-24">CBD Corporation helped us secure the perfect commercial space. Their knowledge and support made the entire process seamless and efficient.</p>
+                                                        </div>
+                                                        <div
+                                                            class="info d-flex align-items-center pt-40 mt-40 bord-thin-top">
+                                                            <div>
+                                                                <div class="fit-img circle">
+                                                                    <img src="assets/images/avatar.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="ml-20">
+                                                                <h5>Joe R</h5>
+                                                                <span class="sub-title main-color">Business Owner</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="item">
+                                                    <div class="content">
+                                                        <div class="text">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="256.721"
+                                                                height="208.227" viewBox="0 0 256.721 208.227"
+                                                                class="qout-svg">
+                                                                <path data-name="Path"
+                                                                    d="M-23.723-530.169v97.327H-121.05v-68.7q0-40.076,13.359-73.472T-62.845-639.9l36.259,28.625Q-63.8-570.244-68.57-530.169Zm158.395,0v97.327H37.345v-68.7q0-40.076,13.359-73.472T95.55-639.9l36.259,28.625Q94.6-570.244,89.825-530.169Z"
+                                                                    transform="translate(121.55 640.568)" fill="none"
+                                                                    stroke="#fff" stroke-width="1" opacity="0.322">
+                                                                </path>
+                                                            </svg>
+                                                            <p class="fz-24">Their strategic advice and insight into development opportunities added real value to our portfolio. Highly recommend their team.</p>
+                                                        </div>
+                                                        <div
+                                                            class="info d-flex align-items-center pt-40 mt-40 bord-thin-top">
+                                                            <div>
+                                                                <div class="fit-img circle">
+                                                                    <img src="assets/images/avatar.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="ml-20">
+                                                                <h5>Bobby S</h5>
+                                                                <span class="sub-title main-color">Property Investor</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-arrow-control control-abslout">
+                                    <div class="swiper-button-prev">
+                                        <span class="ti-arrow-left"></span>
+                                    </div>
+                                    <div class="swiper-button-next">
+                                        <span class="ti-arrow-right"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="team section-padding">
+                    <div class="container">
+                        <div class="sec-head mb-80">
+                            <h6 class="sub-title main-color fz-18 mb-25">Our Team</h6>
+                            <div class="bord pt-25 bord-thin-top d-flex align-items-center">
+                                <h2 class="fw-600 text-u ls1">Professional <span class="fw-200">Partners</span></h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="item md-mb50">
+                                    <div class="img">
+                                        <img src="assets/images/satinder-sanghera.jpg" alt="">
+                                        <div class="info">
+                                            <span class="fz-12"></span>
+                                            <h6 class="fz-18" style="text-transform: uppercase;">Sat Sanghera</h6>
+                                        </div>
+                                    </div>
+                                    <div class="social">
+                                        <div class="links">
+                                            <a href="https://www.facebook.com/profile.php?id=61575706232990" target="_blank">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                            <a href="https://www.linkedin.com/company/cbd-corporation/posts/?feedView=all&viewAsMember=true" target="_blank">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="assets/images/vivek.jpg" alt="">
+                                        <div class="info">
+                                            <span class="fz-12"></span>
+                                            <h6 class="fz-18">VIV YADAV</h6>
+                                        </div>
+                                    </div>
+                                    <div class="social">
+                                        <div class="links">
+                                            <a href="https://www.facebook.com/profile.php?id=61575706232990" target="_blank">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                            <a href="https://www.linkedin.com/company/cbd-corporation/posts/?feedView=all&viewAsMember=true" target="_blank">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="blog-list-half section-padding sub-bg">
+                    <div class="container">
+                        <div class="sec-head mb-80">
+                            <h6 class="sub-title main-color fz-18 mb-25">Our Blog</h6>
+                            <div class="bord pt-25 bord-thin-top d-flex align-items-center">
+                                <h2 class="fw-600 text-u ls1">Read Latest <span class="fw-200">News</span></h2>
+                                <div class="ml-auto">
+                                    <a href="#" class="go-more">
+                                        <span class="text">View all posts</span>
+                                        <span class="icon ti-arrow-top-right"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="item main-bg md-mb50">
+                                    <div class="row rest">
+                                        <div class="col-lg-6 col-md-5 img rest">
+                                            <img src="assets/images/commercial-blog.jpg" alt="" class="img-post">
+                                            <div class="author d-flex align-items-center">
+                                                <div>
+                                                    <div class="fit-img icon-img-50 circle">
+                                                        <img src="assets/images/author.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="ml-15 fz-14">
+                                                    <div><span class="opacity-7">Posted by</span><br>CBD</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-7 cont valign">
+                                            <div class="full-width">
+                                                <h5>
+                                                    <a href="melbournes-commercial-warehouse-driving-value-for-investors.html">Melbourne’s off-the-plan commercial warehouse creating uplifting value for investors:</a>
+                                                </h5>
+                                                <span class="date fz-12 ls1 text-u opacity-7 mt-40">May 15,
+                                                    2025</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="item main-bg">
+                                    <div class="row rest">
+                                        <div class="col-lg-6 col-md-5 img rest">
+                                            <img src="assets/images/property-business-opportunities-blog.jpg" alt="" class="img-post">
+                                            <div class="author d-flex align-items-center">
+                                                <div>
+                                                    <div class="fit-img icon-img-50 circle">
+                                                        <img src="assets/images/author.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="ml-15 fz-14">
+                                                    <div><span class="opacity-7">Posted by</span><br>CBD</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-7 cont valign">
+                                            <div class="full-width">
+                                                <h5>
+                                                    <a href="property-related-business-opportunities-in-melbourne.html">3 niche property-related business opportunities in Melbourne.<br/><br/></a>
+                                                </h5>
+                                                <span class="date fz-12 ls1 text-u opacity-7 mt-40">May 15,
+                                                    2025</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="min-footer2">
+                <div class="footer-container">
+                    <div class="container pt-60 pb-25 ontop">
+                        <div class="text-center mb-30">
+                            <h6 class="sub-title mb-15 main-color">Get In Touch</h6>
+                            <h2 class="fz-100 text-u ls1">
+                                <a href="contact-us.html">Let's Connect</a>
+                            </h2>
+                        </div>
+                        <div class="row mt-40 pt-25 bord-thin-top">
+                            <div class="col-lg-4 col-md-6 md-mb15 d-flex align-items-center">
+                                <ul class="rest d-flex align-items-center">
+                                    <li class="cursor-pointer">
+                                        <a href="https://www.facebook.com/profile.php?id=61575706232990" class="hover-anim" target="_blank"><i class="fab fa-facebook-f"></i> </a>
+                                    </li>
+                                    <li class="cursor-pointer ml-30">
+                                        <a href="https://www.linkedin.com/company/cbd-corporation/posts/?feedView=all&viewAsMember=true" class="hover-anim" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                    <li class="cursor-pointer ml-30">
+                                        <a href="#0" class="hover-anim"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li class="cursor-pointer ml-30">
+                                        <a href="#0" class="hover-anim"><i class="fab fa-youtube"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 order-md-3 d-flex justify-content-center align-items-center">
+                                <div class="text-center">
+                                    <p class="fz-14">Copyright © 2025 CBD Corporation. All rights reserved.</p>
+                                    <p class="fz-14">Developed by <a href="https://silverbackcreatives.com.au" target="_blank">Silverback Creatives</a>
+                                    <br/><span class="fz-10">Disclaimer: Images for illustration purposes only</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 md-mb15 order-md-2">
+                                <div class="links d-flex justify-content-end">
+                                    <a href="index.html"><img src="assets/images/cbd-logo-footer.svg" style="max-width:100px !important" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-3.4.0.min.js"></script>
+
+    <!-- plugins -->
+    <script src="assets/js/plugins.js"></script>
+
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollSmoother.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/smoother-script.js"></script>
+
+    <!-- custom scripts -->
+    <script src="assets/js/scripts.js"></script>
+
+</body>
+
+</html>
