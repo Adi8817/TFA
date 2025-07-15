@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>CBD Corporation</title>
-    <meta name="keywords" content="Commercial Property, Development Sites, Business Broking">
-    <meta name="description" content="CBD Corporation is a forward-thinking property brand that specialises in commercial property, business broking, and development sites.">
-    <meta name="author" content="CBD Corporation">
+    <title>TFA</title>
+    <meta name="keywords" content="">
+    <meta name="description" content=">
+    <meta name="author" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
     <link rel="icon" type="image/svg+xml" href="assets/images/cbd-favicon.svg">
@@ -55,6 +55,72 @@
       display: inline-block;
       text-align: center;
     }
+    
+  /* Base styling for the header */
+  .page-header-cerv {
+    background-image: url('assets/image/heroimage.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    text-align: center;
+  }
+
+  .page-header-cerv h1 {
+    font-size: 69px;
+    margin: 0;
+    color: #fff;
+  }
+
+  .page-header-cerv a,
+  .page-header-cerv .main-color {
+    font-size: 16px;
+    color: #ccc;
+    text-decoration: none;
+  }
+
+  /* Tablet responsiveness */
+  @media (max-width: 768px) {
+    .page-header-cerv {
+      height: 300px;
+    }
+
+    .page-header-cerv h1 {
+      font-size: 42px;
+    }
+
+    .page-header-cerv a,
+    .page-header-cerv .main-color {
+      font-size: 14px;
+    }
+  }
+
+  /* Mobile responsiveness */
+  @media (max-width: 480px) {
+    .page-header-cerv {
+      height: 300px;
+      padding: 0 15px;
+    }
+
+    .page-header-cerv h1 {
+      font-size: 28px;
+    }
+
+    .page-header-cerv a,
+    .page-header-cerv .main-color {
+      font-size: 13px;
+    }
+  }
+
+
+  
+</style>
+
     </style>
     <script>
     function updateTime() {
@@ -110,7 +176,7 @@
             <div class="container">
                 <!-- Logo -->
                 <a class="logo icon-img-100" href="index.html">
-                    <img src="assets/images/Tfa_logo (2).png" alt="cbd">
+                    <img src="assets/image/TFA_logo.png" style="width: 150%;" alt="cbd">
                 </a>
                 <!-- navbar links -->
                 <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
@@ -119,9 +185,9 @@
                             <a class="nav-link" href="index.html"><span class="rolling-text">Home</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about-us.html"><span class="rolling-text">About Us</span></a>
+                            <a class="nav-link" href="about-us.html"><span class="rolling-text">Program</span></a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
                                 aria-haspopup="true" aria-expanded="false"><span class="rolling-text">Services</span>
                             </a>
@@ -175,7 +241,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                         <a class="nav-link" href="contact-us.html"><span class="rolling-text">Contact Us</span></a>
                         </li>
@@ -211,7 +277,7 @@
         </nav>
         <div class="hamenu">
             <div class="logo icon-img-100">
-                <a href="index.html"><img src="assets/images/Tfa_logo (2).png" alt=""></a>
+                <a href="index.html"><img src="assets/image/TFA_logo.png" alt=""></a>
             </div>
             <div class="close-menu cursor-pointer ti-close"></div>
             <div class="container">
@@ -235,10 +301,10 @@
                                 <li>
                                     <div class="o-hidden">
                                         <a href="about-us.html" class="link"><span class="fill-text"
-                                                data-text="About Us">About Us</span></a>
+                                                data-text="About Us">Program</span></a>
                                     </div>
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <div class="o-hidden">
                                         <div class="link cursor-pointer dmenu"><span class="fill-text"
                                                 data-text="Services">Services</span> <i></i>
@@ -257,7 +323,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                </li>
+                                </li> -->
                                 <li>
                                     <div class="o-hidden">
                                         <a href="contact-us.html" class="link"><span class="fill-text"
@@ -307,19 +373,43 @@
         </div>
         <div id="smooth-content">
             <main class="main-bg">
-                <header class="page-header-cerv bg-img section-padding" data-background="assets/images/sub-banner-2.jpg"
+                <!-- <header class="page-header-cerv bg-img section-padding" data-background="assets/image/heroimage.png"
                     data-overlay-dark="2">
                     <div class="container pt-100 ontop">
                         <div class="text-center">
-                            <h1 class="fz-100">About Us.</h1>
+                            <h1 class="fz-100">Program</h1>
                             <div class="mt-15">
                                 <a href="home-main.html">Home</a>
                                 <span class="padding-rl-20">|</span>
-                                <span class="main-color">About Us</span>
+                                <span class="main-color">Program</span>
                             </div>
                         </div>
                     </div>
-                </header>
+                </header> -->
+                <header class="page-header-cerv bg-img section-padding" data-overlay-dark="2">
+  <div class="container pt-100 ontop text-center">
+    <h1 class="fz-100">Program</h1>
+    <div class="mt-15">
+      <a href="home-main.html">Home</a>
+      <span class="padding-rl-20">|</span>
+      <span class="main-color">Program</span>
+    </div>
+  </div>
+</header>
+
+                <!-- <header class="page-header-cerv bg-img section-padding" style="background-image: url('assets/image/heroimage.png'); background-position: center; background-size: cover; height: 550px;" data-overlay-dark="2">
+                     <div class="container pt-100 ontop">
+                        <div class="text-center">
+                            <h1 class="fz-100">Program</h1>
+                             <div class="mt-15">
+                                 <a href="home-main.html">Home</a>
+                                 <span class="padding-rl-20">|</span>
+                                 <span class="main-color">Program</span>
+                                 </div>
+                                    </div>
+                                 </div>
+                                </header> -->
+
                  <section class="">
                     <div class="container section-padding">
                         <div class="row">
