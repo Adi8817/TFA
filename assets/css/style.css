@@ -3186,7 +3186,7 @@ body.loaded {
   border-color: rgba(210, 35, 42, 0.05);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  background: rgba(210, 35, 42, 1);
+  background:rgb(107 178 188 / 54%);
 }
 
 .navbar.bord {
@@ -3220,8 +3220,8 @@ body.loaded {
 }
 
 .navbar.nav-scroll {
-  background: rgba(210, 35, 42, 1.0);
-  border-color: rgba(210, 35, 42, 1.0);
+  background: rgb(107 178 188 / 54%);
+  border-color: rgba(210, 35, 42, 0.05);
   -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
   padding: 0 !important;
