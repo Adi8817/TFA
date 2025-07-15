@@ -65,12 +65,12 @@ $(function () {
         if (bodyScroll > 300) {
 
             navbar.addClass("nav-scroll");
-            logo.attr('src', 'assets/image/TFA_logo.png');
+            logo.attr('src', 'assets/image/TFA_Logo_Rev.png');
 
         } else {
 
             navbar.removeClass("nav-scroll");
-            logo.attr('src', 'assets/image/TFA_logo.png');
+            logo.attr('src', 'assets/image/TFA_Logo_Rev.png');
         }
     });
 
