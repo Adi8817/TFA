@@ -66,6 +66,40 @@
             display: inline-block;
             text-align: center;
         }
+
+        /* Logo Responsive Styles */
+        .logo.icon-img-100 {
+            display: block;
+            text-decoration: none;
+        }
+
+        .logo.icon-img-100 img {
+            width: 70%;
+            height: auto;
+            max-width: 100%;
+            transition: width 0.3s ease;
+        }
+
+        /* Mobile View - Small devices (phones) */
+        @media (max-width: 768px) {
+            .logo.icon-img-100 img {
+                width: 50%;
+            }
+        }
+
+        /* Extra small devices (small phones) */
+        @media (max-width: 480px) {
+            .logo.icon-img-100 img {
+                width: 40%;
+            }
+        }
+
+        /* Very small devices */
+        @media (max-width: 320px) {
+            .logo.icon-img-100 img {
+                width: 35%;
+            }
+        }
     </style>
     <script>
         function updateTime() {
@@ -121,7 +155,7 @@
             <div class="container">
                 <!-- Logo -->
                 <a class="logo icon-img-100" href="index.html">
-                    <img src="assets/image/TFA_Logo_Rev.png" style="width: 70%;" alt="TFA">
+                    <img src="assets/image/TFA_Logo_Rev.png" alt="TFA">
                 </a>
                 <!-- navbar links -->
                 <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
@@ -222,7 +256,7 @@
         </nav>
         <div class="hamenu">
             <div class="logo icon-img-100">
-                <a href="index.html"><img src="assets/image/TFA_Logo_Rev.png" style="width: 150%;" alt=""></a>
+                <a href="index.html"><img src="assets/image/TFA_Logo_Rev.png" style="width: 70%;" alt=""></a>
             </div>
             <div class="close-menu cursor-pointer ti-close"></div>
             <div class="container">
@@ -550,8 +584,9 @@
                             <div class="col-lg-6 valign">
                                 <div class="content full-width">
                                     <div class="sec-head mb-30">
-                                        <h3 class="main-color">TFA - Head Coach / Technical Director <span class="rotate-text"><b> SAT SANGHERA </b><span
-                                                        class="fw-200"></span> </h3>
+                                        <h3 class="main-color">TFA - Head Coach / Technical Director <span
+                                                class="rotate-text"><b> SAT SANGHERA </b><span class="fw-200"></span>
+                                        </h3>
                                         <div class="text mt-15">
                                             <h2 class="fw-600 d-rotate wow text-u ls1">
                                                 <!-- <span class="rotate-text">Sat Sanghera<span
@@ -815,7 +850,7 @@
                             <div class="col-lg-4 col-md-6 md-mb15 order-md-2">
                                 <div class="links d-flex justify-content-end">
                                     <a href="index.html"><img src="assets/image/TFA_Logo_Rev.png"
-                                            style="max-width:70px !important"  alt=""></a>
+                                            style="max-width:60px !important" alt=""></a>
                                 </div>
                             </div>
                         </div>
