@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -8,7 +9,7 @@
     <meta name="description" content="CBD Corporation is a forward-thinking property brand that specialises in commercial property, Business Investments, and development sites.">
     <meta name="author" content="CBD Corporation"> -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
+
     <link rel="icon" type="image/svg+xml" href="assets/images/cbd-favicon.svg">
     <link rel="icon" type="image/png" href="assets/images/cbd-favicon.png">
 
@@ -21,64 +22,74 @@
     <link rel="stylesheet" href="assets/css/plugins.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <style type="text/css">
-    @media screen and (max-width: 768px) {
-        .clock-container {display: none !important;}
+        @media screen and (max-width: 768px) {
+            .clock-container {
+                display: none !important;
+            }
         }
-    @media screen and (max-width: 560) {
-        .clock-container {display: none !important;}
+
+        @media screen and (max-width: 560) {
+            .clock-container {
+                display: none !important;
+            }
         }
-    .clock-container {
-      display: flex;
-      gap: 10px;
-    }
-    .clock {
-      text-align: center;
-    }
-    .city {
-      font-weight: bold;
-      font-size: 16px;
-      margin-bottom: 10px;
-    }
-    @font-face {
-    font-family: 'digital-7regular';
-    src: url('assets/fonts/digital-time-webfont.woff2') format('woff2'),
-         url('assets/fonts/digital-time-webfont.woff') format('woff'),
-         url('assets/fonts/digital-time.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    }
-    .time {
-        font-family: 'digital-7regular';
-      font-size: 20px;
-      letter-spacing: 2px;
-      width: 10ch;
-      display: inline-block;
-      text-align: center;
-    }
+
+        .clock-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .clock {
+            text-align: center;
+        }
+
+        .city {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        @font-face {
+            font-family: 'digital-7regular';
+            src: url('assets/fonts/digital-time-webfont.woff2') format('woff2'),
+                url('assets/fonts/digital-time-webfont.woff') format('woff'),
+                url('assets/fonts/digital-time.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .time {
+            font-family: 'digital-7regular';
+            font-size: 20px;
+            letter-spacing: 2px;
+            width: 10ch;
+            display: inline-block;
+            text-align: center;
+        }
     </style>
     <script>
-    function updateTime() {
-      const now = new Date();
-      const options = { hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' };
+        function updateTime() {
+            const now = new Date();
+            const options = { hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' };
 
-      document.getElementById("london").textContent =
-        now.toLocaleTimeString('en-GB', { ...options, timeZone: 'Europe/London' });
+            document.getElementById("london").textContent =
+                now.toLocaleTimeString('en-GB', { ...options, timeZone: 'Europe/London' });
 
-      document.getElementById("delhi").textContent =
-        now.toLocaleTimeString('en-IN', { ...options, timeZone: 'Asia/Kolkata' });
+            document.getElementById("delhi").textContent =
+                now.toLocaleTimeString('en-IN', { ...options, timeZone: 'Asia/Kolkata' });
 
-      document.getElementById("melbourne").textContent =
-        now.toLocaleTimeString('en-AU', { ...options, timeZone: 'Australia/Melbourne' });
+            document.getElementById("melbourne").textContent =
+                now.toLocaleTimeString('en-AU', { ...options, timeZone: 'Australia/Melbourne' });
 
-      document.getElementById("sydney").textContent =
-        now.toLocaleTimeString('en-AU', { ...options, timeZone: 'Australia/Sydney' });
-    }
+            document.getElementById("sydney").textContent =
+                now.toLocaleTimeString('en-AU', { ...options, timeZone: 'Australia/Sydney' });
+        }
 
-    window.addEventListener("DOMContentLoaded", () => {
-      updateTime(); // initial call
-      setInterval(updateTime, 1000);
-    });
-  </script>
+        window.addEventListener("DOMContentLoaded", () => {
+            updateTime(); // initial call
+            setInterval(updateTime, 1000);
+        });
+    </script>
 </head>
 
 <body>
@@ -119,7 +130,7 @@
                             <a class="nav-link" href="index.html"><span class="rolling-text">Home</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about-us.html"><span class="rolling-text">Program</span></a>
+                            <a class="nav-link" href="Program.html"><span class="rolling-text">Program</span></a>
                         </li>
                         <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
@@ -177,7 +188,7 @@
                             </div>
                         </li> -->
                         <li class="nav-item">
-                        <a class="nav-link" href="contact-us.html"><span class="rolling-text">Contact Us</span></a>
+                            <a class="nav-link" href="contact-us.html"><span class="rolling-text">Contact Us</span></a>
                         </li>
                         <li></li>
                     </ul>
@@ -185,20 +196,20 @@
                 <div class="topnav">
                     <div class="menu-icon clock-container  p-0">
                         <div class="clock">
-                          <div class="city">LONDON</div>
-                          <div class="time" id="london">88:88:88</div>
+                            <div class="city">LONDON</div>
+                            <div class="time" id="london">88:88:88</div>
                         </div>
                         <div class="clock">
-                          <div class="city">DELHI</div>
-                          <div class="time" id="delhi">88:88:88</div>
+                            <div class="city">DELHI</div>
+                            <div class="time" id="delhi">88:88:88</div>
                         </div>
                         <div class="clock">
-                          <div class="city">MELBOURNE</div>
-                          <div class="time" id="melbourne">88:88:88</div>
+                            <div class="city">MELBOURNE</div>
+                            <div class="time" id="melbourne">88:88:88</div>
                         </div>
                         <div class="clock">
-                          <div class="city">SYDNEY</div>
-                          <div class="time" id="sydney">88:88:88</div>
+                            <div class="city">SYDNEY</div>
+                            <div class="time" id="sydney">88:88:88</div>
                         </div>
                     </div>
                 </div>
@@ -211,7 +222,7 @@
         </nav>
         <div class="hamenu">
             <div class="logo icon-img-100">
-                <a href="index.html"><img src="assets/image/TFA_logo.png" alt=""></a>
+                <a href="index.html"><img src="assets/image/TFA_logo.png" style="width: 150%;" alt=""></a>
             </div>
             <div class="close-menu cursor-pointer ti-close"></div>
             <div class="container">
@@ -228,17 +239,20 @@
                             <ul class="main-menu rest">
                                 <li>
                                     <div class="o-hidden">
-                                        <a href="index.html" class="link"><span class="fill-text" data-text="Home">Home</span></a>
+                                        <a href="index.html" class="link"><span class="fill-text"
+                                                data-text="Home">Home</span></a>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="o-hidden">
-                                        <a href="about-us.html" class="link"><span class="fill-text" data-text="About Us">About Us</span></a>
+                                        <a href="Program.html" class="link"><span class="fill-text"
+                                                data-text="Program">Program</span></a>
                                     </div>
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <div class="o-hidden">
-                                        <div class="link cursor-pointer dmenu"><span class="fill-text" data-text="Services">Services</span><i></i>
+                                        <div class="link cursor-pointer dmenu"><span class="fill-text"
+                                                data-text="Services">Services</span><i></i>
                                         </div>
                                     </div>
                                     <div class="sub-menu">
@@ -248,10 +262,11 @@
                                             <li><a class="sub-link" href="services.html">Development Sites</a></li>
                                         </ul>
                                     </div>
-                                </li>
+                                </li> -->
                                 <li>
                                     <div class="o-hidden">
-                                        <a href="contact-us.html" class="link"><span class="fill-text" data-text="Contact Us">Contact Us</span></a>
+                                        <a href="contact-us.html" class="link"><span class="fill-text"
+                                                data-text="Contact Us">Contact Us</span></a>
                                     </div>
                                 </li>
                             </ul>
@@ -262,20 +277,25 @@
                             <div class="item mb-50">
                                 <h6 class="sub-title mb-15 main-color">Address</h6>
                                 <h6 class="mb-10 fz-20">CBD Melbourne</h4>
-                                <h6 class="mb-15 fz-16">Level 10, 440 Collins Street, Melbourne <br/>Victoria 3000</h5>
-                                <h6 class="mb-10 fz-20">CBD London</h4>
-                                <h6 class="mb-15 fz-16">40 Bank Street, Canary Wharf <br/>London E14 5NR</h5>
-                                <h6 class="mb-10 fz-20">CBD Delhi</h4>
-                                <h6 class="fz-16">DLF Cyber City, Sector 24, Gurugram, <br/>Haryana - 122002</h5>
+                                    <h6 class="mb-15 fz-16">Level 10, 440 Collins Street, Melbourne <br />Victoria 3000
+                                        </h5>
+                                        <h6 class="mb-10 fz-20">CBD London</h4>
+                                            <h6 class="mb-15 fz-16">40 Bank Street, Canary Wharf <br />London E14 5NR
+                                                </h5>
+                                                <h6 class="mb-10 fz-20">CBD Delhi</h4>
+                                                    <h6 class="fz-16">DLF Cyber City, Sector 24, Gurugram, <br />Haryana
+                                                        - 122002</h5>
                             </div>
                             <div class="item mb-50">
                                 <h6 class="sub-title mb-15 main-color">Social Media</h6>
                                 <ul class="rest d-flex align-items-center">
                                     <li class="cursor-pointer">
-                                        <a href="https://www.facebook.com/profile.php?id=61575706232990" class="hover-anim" target="_blank"><i class="fab fa-facebook-f"></i> </a>
+                                        <a href="https://www.facebook.com/profile.php?id=61575706232990"
+                                            class="hover-anim" target="_blank"><i class="fab fa-facebook-f"></i> </a>
                                     </li>
                                     <li class="cursor-pointer ml-30">
-                                        <a href="https://www.linkedin.com/company/cbd-corporation/posts/?feedView=all&viewAsMember=true" class="hover-anim" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="https://www.linkedin.com/company/cbd-corporation/posts/?feedView=all&viewAsMember=true"
+                                            class="hover-anim" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                     </li>
                                     <li class="cursor-pointer ml-30">
                                         <a href="#0" class="hover-anim"><i class="fab fa-instagram"></i></a>
@@ -305,9 +325,11 @@
                                     data-overlay-dark="2">
                                     <div class="container">
                                         <div class="caption text-center">
-                                            <h2 class="mb-30" data-swiper-parallax="-2000">Australian-Built Football Academy</h2>
+                                            <h2 class="mb-30" data-swiper-parallax="-2000">Australian-Built Football
+                                                Academy</h2>
                                             <h1>
-                                                <span data-swiper-parallax="-1000">Designed for young athletes with global dreams.</span>
+                                                <span data-swiper-parallax="-1000">Designed for young athletes with
+                                                    global dreams.</span>
                                             </h1>
                                         </div>
                                     </div>
@@ -318,9 +340,11 @@
                                     data-overlay-dark="3">
                                     <div class="container">
                                         <div class="caption text-center">
-                                        <h2 class="mb-30" data-swiper-parallax="-2000">Your Local Football Development Hub</h2>
+                                            <h2 class="mb-30" data-swiper-parallax="-2000">Your Local Football
+                                                Development Hub</h2>
                                             <h1>
-                                                <span data-swiper-parallax="-1000">Training future stars, right from the grassroots.</span>
+                                                <span data-swiper-parallax="-1000">Training future stars, right from the
+                                                    grassroots.</span>
                                             </h1>
                                         </div>
                                     </div>
@@ -331,9 +355,11 @@
                                     data-overlay-dark="3">
                                     <div class="container">
                                         <div class="caption text-center">
-                                            <h2 class="mb-30" data-swiper-parallax="-2000">Building Confidence Through the Game</h2>
+                                            <h2 class="mb-30" data-swiper-parallax="-2000">Building Confidence Through
+                                                the Game</h2>
                                             <h1>
-                                                <span data-swiper-parallax="-1000">Skills, discipline & resilience — on and off the pitch.</span>
+                                                <span data-swiper-parallax="-1000">Skills, discipline & resilience — on
+                                                    and off the pitch.</span>
                                             </h1>
                                         </div>
                                     </div>
@@ -382,12 +408,17 @@
                             </div>
                             <div class="col-lg-7">
                                 <div class="text">
-                                    <h5 class="mb-30 fw-400 line-height-40">Total Football Academie is a future-focused football training institution dedicated to nurturing young talent from the grassroots level.</h5>
-                                    <p class="fz-18 mb-15">Driven by a passion for building strong, skilled, and intelligent footballers, we deliver value through structured coaching programs and a holistic development model.
+                                    <h5 class="mb-30 fw-400 line-height-40">Total Football Academie is a future-focused
+                                        football training institution dedicated to nurturing young talent from the
+                                        grassroots level.</h5>
+                                    <p class="fz-18 mb-15">Driven by a passion for building strong, skilled, and
+                                        intelligent footballers, we deliver value through structured coaching programs
+                                        and a holistic development model.
                                     </p>
                                     <p class="fz-18 mb-7">
-                                    At TFA, we offer more than just training — we build confidence, discipline, and pathways to success, both on and off the pitch.</p>
-                                    
+                                        At TFA, we offer more than just training — we build confidence, discipline, and
+                                        pathways to success, both on and off the pitch.</p>
+
                                 </div>
                             </div>
                         </div>
@@ -425,9 +456,16 @@
                                     <div class="sec-head mb-30">
                                         <h3 class="main-color">What Sets Us Apart</h3>
                                         <div class="text mt-15">
-                                            <p class="fz-18 mb-15">Game Intelligence, Not Just Training: At Total Football Academie, we go beyond drills — we shape thinking footballers. Our programs build players who read the game, adapt under pressure, and make smarter decisions on the pitch.</p>
-                                            <p class="fz-18 mb-15">We take a personalised approach, understanding each player's journey and tailoring coaching to unlock their full potential — whether they’re beginners or elite prospects.</p>
-                                            <p class="fz-18 mb-15">Our experienced FFA-licensed coaches bring national and international insights, ensuring players are ready for the modern game — technically, tactically, and mentally.
+                                            <p class="fz-18 mb-15">Game Intelligence, Not Just Training: At Total
+                                                Football Academie, we go beyond drills — we shape thinking footballers.
+                                                Our programs build players who read the game, adapt under pressure, and
+                                                make smarter decisions on the pitch.</p>
+                                            <p class="fz-18 mb-15">We take a personalised approach, understanding each
+                                                player's journey and tailoring coaching to unlock their full potential —
+                                                whether they’re beginners or elite prospects.</p>
+                                            <p class="fz-18 mb-15">Our experienced FFA-licensed coaches bring national
+                                                and international insights, ensuring players are ready for the modern
+                                                game — technically, tactically, and mentally.
                                             </p>
                                         </div>
                                     </div>
@@ -443,7 +481,7 @@
                         </svg>
                     </div>
                 </section>
-                 <section class="services section-padding pb-0">
+                <section class="services section-padding pb-0">
                     <div class="container">
                         <div class="sec-head mb-80">
                             <h6 class="sub-title main-color mb-25">WHAT WE OFFER</h6>
@@ -502,11 +540,11 @@
                         </div>
                     </div>
                 </section>
-               
+
 
 
                 <section class="about-crev section-padding position-re" data-scroll-index="2">
-                    
+
                     <div class="container">
                         <div class="row lg-marg">
                             <div class="col-lg-6 valign">
@@ -515,10 +553,19 @@
                                         <h3 class="main-color">TFA – Head Coach / Technical Director</h3>
                                         <div class="text mt-15">
                                             <h2 class="fw-600 d-rotate wow text-u ls1">
-                                             <span class="rotate-text">Sat Sanghera<span class="fw-200"></span></span>
+                                                <span class="rotate-text">Sat Sanghera<span
+                                                        class="fw-200"></span></span>
                                             </h2>
-                                            <p class="fz-18 mb-15">Sat Sanghera is a passionate and experienced football coach with a strong track record in youth development and high-performance environments. He has coached the AFA Australian Youth Futsal Team, supporting thegrowth of emerging talent on both national and international stages.</p>
-                                            <p class="fz-18 mb-15">With a lifelong connection to the game, Sat blends technical knowledge, tactical insight, and strong communication to bring the best out of his players. His coaching philosophy focuses on building confident, intelligent footballers through discipline, teamwork, and a deep understanding of the game.</p>
+                                            <p class="fz-18 mb-15">Sat Sanghera is a passionate and experienced football
+                                                coach with a strong track record in youth development and
+                                                high-performance environments. He has coached the AFA Australian Youth
+                                                Futsal Team, supporting thegrowth of emerging talent on both national
+                                                and international stages.</p>
+                                            <p class="fz-18 mb-15">With a lifelong connection to the game, Sat blends
+                                                technical knowledge, tactical insight, and strong communication to bring
+                                                the best out of his players. His coaching philosophy focuses on building
+                                                confident, intelligent footballers through discipline, teamwork, and a
+                                                deep understanding of the game.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -547,7 +594,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                     <div class="line-overlay opacity-7">
@@ -560,19 +607,20 @@
                 </section>
 
                 <section class="img-scale">
-                   <div class="image" data-overlay-dark="2">
-                    <div class="img">
-                        <img id="grow" src="assets/images/cta-bg.jpg" data-speed="0.2" data-lag="0" alt="">
-                    </div>
-                    <div class="text-u text-center ontop"> 
-                        <h2 class="fz-48 fw-300"> <span class="fw-600">DISCOVER THE FUTURE OF</span> <span class="fw-600">FOOTBALL WITH TFA</span></h2>
-                        <div class="more ontop full-width">
-                            <a href="contact-us.html" style="text-decoration: underline;">
-                                <span class="mt-15">JOIN THE ACADEMY <i class="fas fa-arrow-right ml-10"></i></span>
-                            </a>
+                    <div class="image" data-overlay-dark="2">
+                        <div class="img">
+                            <img id="grow" src="assets/images/cta-bg.jpg" data-speed="0.2" data-lag="0" alt="">
+                        </div>
+                        <div class="text-u text-center ontop">
+                            <h2 class="fz-48 fw-300"> <span class="fw-600">DISCOVER THE FUTURE OF</span> <span
+                                    class="fw-600">FOOTBALL WITH TFA</span></h2>
+                            <div class="more ontop full-width">
+                                <a href="contact-us.html" style="text-decoration: underline;">
+                                    <span class="mt-15">JOIN THE ACADEMY <i class="fas fa-arrow-right ml-10"></i></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
                 </section>
                 <!-- <section class="blog-list-half section-padding sub-bg">
                     <div class="container">
@@ -648,70 +696,81 @@
                         </div>
                     </div>
                 </section> -->
-           
+
                 <section class="values-section">
-        <div class="container">
-            <h2 class="section-title">Values and Vision</h2>
-            
-            <div class="values-grid">
-                <div class="value-card">
-                    <div class="icon-container">
-                        <svg class="icon" viewBox="0 0 24 24">
-                            <path d="M6 3h2l2 2h8a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/>
-                            <path d="M8 21l-2-2 2-2 2 2-2 2z"/>
-                            <path d="M16 21l-2-2 2-2 2 2-2 2z"/>
-                            <path d="M12 17l-2-2 2-2 2 2-2 2z"/>
-                        </svg>
-                    </div>
-                    <h3 class="value-title">Excellence</h3>
-                    <p class="value-description">We pursue the highest standards in everything we do – from training and education to behavior and performance – striving for continuous improvement on and off the pitch.</p>
-                </div>
+                    <div class="container">
+                        <h2 class="section-title">Values and Vision</h2>
 
-                <div class="value-card">
-                    <div class="icon-container">
-                        <svg class="icon" viewBox="0 0 24 24">
-                            <path d="M20 6L9 17l-5-5"/>
-                        </svg>
-                    </div>
-                    <h3 class="value-title">Integrity</h3>
-                    <p class="value-description">We act with honesty, transparency, and respect. We build trust by doing the right thing, even when no one is watching.</p>
-                </div>
+                        <div class="values-grid">
+                            <div class="value-card">
+                                <div class="icon-container">
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <path
+                                            d="M6 3h2l2 2h8a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" />
+                                        <path d="M8 21l-2-2 2-2 2 2-2 2z" />
+                                        <path d="M16 21l-2-2 2-2 2 2-2 2z" />
+                                        <path d="M12 17l-2-2 2-2 2 2-2 2z" />
+                                    </svg>
+                                </div>
+                                <h3 class="value-title">Excellence</h3>
+                                <p class="value-description">We pursue the highest standards in everything we do – from
+                                    training and education to behavior and performance – striving for continuous
+                                    improvement on and off the pitch.</p>
+                            </div>
 
-                <div class="value-card">
-                    <div class="icon-container">
-                        <svg class="icon" viewBox="0 0 24 24">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
-                    </div>
-                    <h3 class="value-title">Development</h3>
-                    <p class="value-description">We prioritize long-term player growth over short-term results, nurturing technical, physical, tactical, and personal development through individualized support and mentorship.</p>
-                </div>
+                            <div class="value-card">
+                                <div class="icon-container">
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5" />
+                                    </svg>
+                                </div>
+                                <h3 class="value-title">Integrity</h3>
+                                <p class="value-description">We act with honesty, transparency, and respect. We build
+                                    trust by doing the right thing, even when no one is watching.</p>
+                            </div>
 
-                <div class="value-card">
-                    <div class="icon-container">
-                        <svg class="icon" viewBox="0 0 24 24">
-                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                        </svg>
-                    </div>
-                    <h3 class="value-title">Resilience</h3>
-                    <p class="value-description">We foster mental toughness, adaptability, and the courage to overcome challenges – qualities essential for success in football and life.</p>
-                </div>
+                            <div class="value-card">
+                                <div class="icon-container">
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                </div>
+                                <h3 class="value-title">Development</h3>
+                                <p class="value-description">We prioritize long-term player growth over short-term
+                                    results, nurturing technical, physical, tactical, and personal development through
+                                    individualized support and mentorship.</p>
+                            </div>
 
-                <div class="value-card">
-                    <div class="icon-container">
-                        <svg class="icon" viewBox="0 0 24 24">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                            <circle cx="9" cy="7" r="4"/>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                        </svg>
+                            <div class="value-card">
+                                <div class="icon-container">
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                    </svg>
+                                </div>
+                                <h3 class="value-title">Resilience</h3>
+                                <p class="value-description">We foster mental toughness, adaptability, and the courage
+                                    to overcome challenges – qualities essential for success in football and life.</p>
+                            </div>
+
+                            <div class="value-card">
+                                <div class="icon-container">
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                        <circle cx="9" cy="7" r="4" />
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                    </svg>
+                                </div>
+                                <h3 class="value-title">Unity</h3>
+                                <p class="value-description">We cultivate a strong team culture where diversity is
+                                    embraced, roles are valued, and collective success is celebrated above individual
+                                    accolades.</p>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="value-title">Unity</h3>
-                    <p class="value-description">We cultivate a strong team culture where diversity is embraced, roles are valued, and collective success is celebrated above individual accolades.</p>
-                </div>
-            </div>
-        </div>
-                 </section>
+                </section>
 
 
             </main>
@@ -728,10 +787,12 @@
                             <div class="col-lg-4 col-md-6 md-mb15 d-flex align-items-center">
                                 <ul class="rest d-flex align-items-center">
                                     <li class="cursor-pointer">
-                                        <a href="https://www.facebook.com/profile.php?id=61575706232990" class="hover-anim" target="_blank"><i class="fab fa-facebook-f"></i> </a>
+                                        <a href="https://www.facebook.com/profile.php?id=61575706232990"
+                                            class="hover-anim" target="_blank"><i class="fab fa-facebook-f"></i> </a>
                                     </li>
                                     <li class="cursor-pointer ml-30">
-                                        <a href="https://www.linkedin.com/company/cbd-corporation/posts/?feedView=all&viewAsMember=true" class="hover-anim" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="https://www.linkedin.com/company/cbd-corporation/posts/?feedView=all&viewAsMember=true"
+                                            class="hover-anim" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                     </li>
                                     <li class="cursor-pointer ml-30">
                                         <a href="#0" class="hover-anim"><i class="fab fa-instagram"></i></a>
@@ -745,13 +806,15 @@
                                 <div class="text-center">
                                     <p class="fz-14">Copyright © 2025 TFA . All rights reserved.</p>
                                     <p class="fz-14">Developed by <a href="#" target="_blank">Austratech</a>
-                                    <br/><span class="fz-10">Disclaimer: Images for illustration purposes only</span>
+                                        <br /><span class="fz-10">Disclaimer: Images for illustration purposes
+                                            only</span>
                                     </p>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 md-mb15 order-md-2">
                                 <div class="links d-flex justify-content-end">
-                                    <a href="index.html"><img src="assets/image/TFA_logo.png" style="max-width:100px !important" alt=""></a>
+                                    <a href="index.html"><img src="assets/image/TFA_logo.png"
+                                            style="max-width:130px !important"  alt=""></a>
                                 </div>
                             </div>
                         </div>

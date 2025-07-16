@@ -10539,7 +10539,7 @@ footer.clean-footer.crev:before {
         /* Large screens */
         @media (min-width: 1025px) {
             .values-grid {
-                grid-template-columns: repeat(5, 1fr);
+                grid-template-columns: repeat(4, 1fr);
             }
         }
 
