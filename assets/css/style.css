@@ -214,7 +214,7 @@ figure {
 }
 
 .main-color {
-  color: #213A76 !important;
+  color: #ff5500 !important;
 }
 
 .main-colorbg {
@@ -3183,10 +3183,14 @@ body.loaded {
 }
 
 .navbar.blur {
-  border-color: rgba(210, 35, 42, 0.05);
+  /* border-color: #fe6700;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  background:rgb(107 178 188 / 54%);
+  background:#fe6700; */
+    border-color: #29437a;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background:#29437a;  
 }
 
 .navbar.bord {
@@ -3220,8 +3224,8 @@ body.loaded {
 }
 
 .navbar.nav-scroll {
-  background: rgb(107 178 188 / 54%);
-  border-color: rgba(210, 35, 42, 0.05);
+  background:#29437a;
+  border-color: #29437a;
   -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
   padding: 0 !important;
@@ -10385,15 +10389,16 @@ footer.clean-footer.crev:before {
         .value-card {
             text-align: center;
             padding: 10px 10px 10px 10px;
-            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            background: linear-gradient(135deg, #f5f7f9 0%, #f5f7f9 100%);
              font-family: 'Poppins', sans-serif;
              font-family: 'Satoshi-Variable';
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
+            box-shadow: 0 10px 30px #f5f7f9;
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
-            color: white;
+            color: black;
+            border:1px solid #d4d8dd;
         }
 
         .value-card::before {
@@ -10436,7 +10441,7 @@ footer.clean-footer.crev:before {
         .icon {
             width: 40px;
             height: 40px;
-            stroke: #2563eb;
+            stroke: #222323;
             stroke-width: 2;
             fill: none;
         }
@@ -10447,7 +10452,7 @@ footer.clean-footer.crev:before {
             margin-bottom: 20px;
             text-transform: uppercase;
             letter-spacing: 1px;
-            color: white;
+            color: rgb(23, 22, 22);
         }
 
         .value-description {
@@ -10455,7 +10460,7 @@ footer.clean-footer.crev:before {
             line-height: 1.6;
             opacity: 0.95;
             font-weight: 300;
-            color: white;
+            color: rgb(21, 20, 20);
         }
 
         /* Responsive Design */
@@ -10539,7 +10544,7 @@ footer.clean-footer.crev:before {
         /* Large screens */
         @media (min-width: 1025px) {
             .values-grid {
-                grid-template-columns: repeat(4, 1fr);
+                grid-template-columns: repeat(5, 1fr);
             }
         }
 
