@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="assets/css/satoshi.css">
     <link rel="stylesheet" href="assets/css/plugins.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/partnersctions.css">
     <!-- <link rel="stylesheet" href="assets/css/registration-form.css"> -->
     <style type="text/css">
         @media screen and (max-width: 768px) {
@@ -100,188 +101,7 @@
             }
         }
 
-        .clients-section {
-            background: #ffffff;
-            padding: 20px 20px;
-            text-align: center;
-            /* font-family: 'Arial', sans-serif; */
-        }
-
-        .clients-section h2 {
-            font-size: 2.5rem;
-            color: #ff5500;
-            margin-bottom: 15px;
-            font-weight: 600;
-            font-family: 'Poppins', sans-serif;
-            font-family: 'Satoshi-Variable';
-        }
-
-        .clients-section p {
-            color: #7f8c8d;
-            font-size: 1.1rem;
-            max-width: 600px;
-            margin: 0 auto 60px;
-            line-height: 1.6;
-        }
-
-        .clients-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .clients-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .clients-box {
-            background: #f5f7f9;
-            border-radius: 15px;
-            padding: 40px 30px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-            transition: all 0.3s ease;
-            border: 1px solid #e9ecef;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .clients-box::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, #667eea 0%, #ff5500 100%);
-            transform: scaleX(0);
-            transition: transform 0.3s ease;
-        }
-
-        .clients-box:hover::before {
-            transform: scaleX(1);
-        }
-
-        .clients-box:hover {
-            transform: translateY(-5px);
-            /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); */
-            /* box-shadow: 0 20px 40px rgba(37, 99, 235, 0.4); */
-        }
-
-        .clients-box img {
-            width: 100%;
-            height: 130px;
-            object-fit: contain;
-            object-position: center;
-            transition: all 0.3s ease;
-            filter: grayscale(100%);
-        }
-
-        .clients-box:hover img {
-            filter: grayscale(0%);
-            transform: scale(1.05);
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .clients-section {
-                padding: 60px 15px;
-            }
-
-            .clients-section h2 {
-                font-size: 2rem;
-            }
-
-            .clients-section p {
-                font-size: 1rem;
-                margin-bottom: 40px;
-            }
-
-            .clients-grid {
-                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-                gap: 20px;
-            }
-
-            .clients-box {
-                padding: 30px 20px;
-            }
-
-            .clients-box img {
-                height: 70px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .clients-section {
-                padding: 50px 10px;
-            }
-
-            .clients-section h2 {
-                font-size: 1.8rem;
-            }
-
-            .clients-grid {
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-                gap: 15px;
-            }
-
-            .clients-box {
-                padding: 25px 15px;
-            }
-
-            .clients-box img {
-                height: 146px;
-            }
-        }
-
-        /* Large screens */
-        @media (min-width: 1200px) {
-            .clients-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-
-        /* Animation */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .clients-box {
-            animation: fadeInUp 0.6s ease forwards;
-        }
-
-        .clients-box:nth-child(1) {
-            animation-delay: 0.1s;
-        }
-
-        .clients-box:nth-child(2) {
-            animation-delay: 0.2s;
-        }
-
-        .clients-box:nth-child(3) {
-            animation-delay: 0.3s;
-        }
-
-        .clients-box:nth-child(4) {
-            animation-delay: 0.4s;
-        }
-
-        .clients-box:nth-child(5) {
-            animation-delay: 0.5s;
-        }
-
-        .clients-box:nth-child(6) {
-            animation-delay: 0.6s;
-        }
+        
     </style>
     <script>
         function updateTime() {
@@ -1056,39 +876,63 @@
         </section>
 
 
-        <section class="clients-section">
-            <div class="clients-container">
-                <h2>Partners Who Trust Our Vision</h2>
-                <!-- <p>Facilisi curabitur volutpat nunc, suspendisse tincidunt. Lorem pulvinar purus libero
-                            accumsan, sagittis ullamcorper velit mauris sit.</p> -->
 
-                <div class="clients-grid">
-                    <div class="clients-box">
-                        <img src="assets/partnerimage/AFG_Logo_NEW.png" alt="ZooTV">
+        <section class="partners-section">
+        <div class="partners-container">
+            <div class="section-title">
+                <h2 style="color: #ff5500;">TFA PARTNERS</h2>
+            </div>
+            
+            <div class="partners-slider">
+                <div class="partners-track">
+                    <!-- Original Partners -->
+                    <div class="partner-image">
+                        <img src="assets/partnerimage/AFG_Logo_NEW.png" alt="Partner 1">
                     </div>
 
-                    <div class="clients-box">
-                        <img src="assets/partnerimage/Football_Victoria.jpg" alt="Velocity9">
+                    <div class="partner-image">
+                        <img src="assets/partnerimage/Football_Victoria.jpg" alt="Partner 2">
                     </div>
 
-                    <div class="clients-box">
-                        <img src="assets/partnerimage/FVFutsal.jpg" alt="FoxHub">
+                    <div class="partner-image">
+                        <img src="assets/partnerimage/FVFutsal.jpg" alt="Partner 3">
                     </div>
 
-                    <div class="clients-box">
-                        <img src="assets/partnerimage/Jaguars Melbourne.jpg" alt="Kyan">
+                    <div class="partner-image">
+                        <img src="assets/partnerimage/Jaguars Melbourne.jpg" alt="Partner 4">
                     </div>
 
-                    <div class="clients-box">
-                        <img src="assets/partnerimage/Logo.png" alt="Liva">
+                    <div class="partner-image">
+                        <img src="assets/partnerimage/Logo.png" alt="Partner 5">
                     </div>
 
-                    <!-- <div class="clients-box">
-                                <img src="assets/partnerimage/vfutsal.png" alt="Circle">
-                            </div> -->
+                    <!-- Duplicate for seamless loop -->
+                    <div class="partner-image">
+                        <img src="assets/partnerimage/AFG_Logo_NEW.png" alt="Partner 1">
+                    </div>
+
+                    <div class="partner-image">
+                        <img src="assets/partnerimage/Football_Victoria.jpg" alt="Partner 2">
+                    </div>
+
+                    <div class="partner-image">
+                        <img src="assets/partnerimage/FVFutsal.jpg" alt="Partner 3">
+                    </div>
+
+                    <div class="partner-image">
+                        <img src="assets/partnerimage/Jaguars Melbourne.jpg" alt="Partner 4">
+                    </div>
+
+                    <div class="partner-image">
+                        <img src="assets/partnerimage/Logo.png" alt="Partner 5">
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+
+
+        
 
 
         </main>

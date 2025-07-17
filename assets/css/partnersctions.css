@@ -1,0 +1,113 @@
+.partners-section {
+            background: #f8f9fa;
+            padding: 60px 0;
+            overflow: hidden;
+        }
+
+        .partners-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #333;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .partners-slider {
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .partners-track {
+            display: inline-flex;
+            animation: slide 40s linear infinite;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .partner-image {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 180px;
+            height: 80px;
+            opacity: 0.8;
+            flex-shrink: 0;
+        }
+
+        .partner-image img {
+            max-width: 200px;
+            max-height: 100px;
+            width: auto;
+            height: auto;
+            object-fit: cover;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .partners-section {
+                padding: 40px 0;
+            }
+
+            .section-title h2 {
+                font-size: 1.5rem;
+            }
+
+            .partner-image {
+                min-width: 140px;
+                height: 60px;
+            }
+
+            .partner-image img {
+                max-width: 120px;
+                max-height: 45px;
+            }
+
+            .partners-track {
+                gap: 60px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .partners-section {
+                padding: 30px 0;
+            }
+
+            .section-title h2 {
+                font-size: 1.3rem;
+            }
+
+            .partner-image {
+                min-width: 120px;
+                height: 50px;
+            }
+
+            .partner-image img {
+                max-width: 100px;
+                max-height: 51px;
+            }
+
+            .partners-track {
+                gap: 7px;
+            }
+        }

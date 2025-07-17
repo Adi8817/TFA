@@ -10130,7 +10130,7 @@ footer.clean-footer.crev:before {
   }
 
   .section-padding {
-    padding-top: 100px;
+    padding-top: 34px;
     padding-bottom: 100px;
   }
 
@@ -10782,8 +10782,8 @@ footer.clean-footer.crev:before {
 
 .value-card:hover {
   transform: translateY(-10px);
-  /* box-shadow: 0 20px 40px rgba(37, 99, 235, 0.4); */
-  box-shadow: 0 20px 40px rgba(255, 85, 0, 1);
+  box-shadow: 0 20px 40px rgba(37, 99, 235, 0.4);
+  /* box-shadow: 0 20px 40px rgba(255, 85, 0, 1); */
 }
 
 .icon-container {
