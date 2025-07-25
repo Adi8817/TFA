@@ -3233,7 +3233,8 @@ body.loaded {
   border-color: #29437a;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  background: #29437a;
+  background: #003778
+;
 }
 
 .navbar.bord {
@@ -3267,7 +3268,7 @@ body.loaded {
 }
 
 .navbar.nav-scroll {
-  background: #29437a;
+  background: #003778;
   border-color: #29437a;
   -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
@@ -11289,7 +11290,7 @@ footer.clean-footer.crev:before {
         /* Small mobile styles */
         @media (max-width: 480px) {
             .unique-tfa-program-wrapper {
-                padding: 25px 10px;
+                padding: 25px 18px;
             }
             
             .unique-tfa-program-text h2 {
