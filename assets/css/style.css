@@ -11077,191 +11077,344 @@ footer.clean-footer.crev:before {
   }
 }
 
+/*program sections start*/
+
+.unique-tfa-program-wrapper {
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            color: black;
+            padding: 50px 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+
+        .unique-tfa-program-wrapper::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 165, 0, 0.03) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .unique-tfa-program-layout {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+        }
+
+        .unique-tfa-program-text {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .unique-tfa-program-text h2 {
+            font-size: 24px;
+            margin-bottom: 24px;
+            line-height: 1.2;
+            font-weight: 500;
+            color:#ff5500;
+        }
+
+        .unique-tfa-program-text p {
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-family: 'Poppins', sans-serif;
+            color: #777;
+        }
+
+        .unique-tfa-program-text h3 {
+            font-size: 1.8rem;
+            margin-bottom: 16px;
+            margin-top: 30px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .unique-tfa-program-text h4 {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            margin-top: 25px;
+            color: #444;
+            font-weight: 600;
+        }
+
+        /* Unique list styles to avoid conflicts */
+        .unique-tfa-skills-list {
+            margin-bottom: 20px;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .unique-tfa-benefits-list {
+            margin-bottom: 20px;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .unique-tfa-skills-list li {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 12px;
+            color: #333;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .unique-tfa-benefits-list li {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 12px;
+            color: #333;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        /* Custom bullet points */
+        .unique-tfa-skills-list li::before {
+            content: '⚽';
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1rem;
+            color: #ff6b35;
+        }
+
+        .unique-tfa-benefits-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1.2rem;
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .unique-tfa-program-gallery {
+            flex: 0 0 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .unique-tfa-program-photo {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            transition: all 0.4s ease;
+            border: 3px solid rgba(255, 255, 255, 0.8);
+        }
+
+        .unique-tfa-program-photo:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 15px 35px rgba(255, 107, 53, 0.3);
+            border-color: #ff6b35;
+        }
+
+        /* Tablet styles */
+        @media (max-width: 968px) {
+            .unique-tfa-program-wrapper {
+                padding: 40px 20px;
+            }
+            
+            .unique-tfa-program-layout {
+                gap: 30px;
+            }
+            
+            .unique-tfa-program-text {
+                padding-right: 0;
+            }
+            
+            .unique-tfa-program-text h2 {
+                font-size: 2.2rem;
+            }
+            
+            .unique-tfa-program-gallery {
+                flex: 0 0 350px;
+            }
+        }
+
+        /* Mobile styles */
+        @media (max-width: 768px) {
+            .unique-tfa-program-wrapper {
+                padding: 30px 15px;
+            }
+            
+            .unique-tfa-program-layout {
+                flex-direction: column;
+                gap: 30px;
+            }
+            
+            .unique-tfa-program-text h2 {
+                font-size: 2rem;
+                margin-bottom: 20px;
+            }
+            
+            .unique-tfa-program-text p {
+                font-size: 1rem;
+                margin-bottom: 16px;
+            }
+            
+            .unique-tfa-program-text h3 {
+                font-size: 1.6rem;
+            }
+            
+            .unique-tfa-program-text h4 {
+                font-size: 1.2rem;
+            }
+            
+            .unique-tfa-skills-list li,
+            .unique-tfa-benefits-list li {
+                font-size: 1rem;
+            }
+            
+            .unique-tfa-program-gallery {
+                flex: none;
+                width: 100%;
+            }
+            
+            .unique-tfa-program-photo {
+                height: 220px;
+            }
+        }
+
+        /* Small mobile styles */
+        @media (max-width: 480px) {
+            .unique-tfa-program-wrapper {
+                padding: 25px 10px;
+            }
+            
+            .unique-tfa-program-text h2 {
+                font-size: 1.8rem;
+            }
+            
+            .unique-tfa-program-gallery {
+                gap: 15px;
+            }
+            
+            .unique-tfa-program-photo {
+                height: 200px;
+                border-radius: 6px;
+            }
+        }
+/*program sections End*/
+
 
 
 /* program sections */
 
-  .football_kickoff_program_section_main {
-            max-width: 800px;
+ 
+
+       .coach-images-section {
+            background-color: white;
+            padding: 60px 20px;
+            font-family: inherit;
+        }
+
+        .coach-images-container {
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 20px 20px;
+        }
+
+        .coach-images-title {
             text-align: center;
-            font-family: 'Satoshi-Variable';
-        }
-
-        .football_programs_header_title {
-            font-size: 28px;
-            font-weight: normal;
-            letter-spacing: 2px;
-            text-transform: uppercase;
             margin-bottom: 40px;
-            color: #666;
-        }
-
-        .football_kickoff_program_main_title {
-            font-size: 30px;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 50px;
-            color: #ff5500;
-        }
-
-        .football_intro_section_wrapper {
-            margin-bottom: 35px;
-        }
-
-        .football_intro_title_heading {
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            color: #000;
-        }
-
-        .football_intro_text_content {
-            font-size: 16px;
-            line-height: 1.8;
-            max-width: 600px;
-            margin: 0 auto 30px;
+            font-size: 2rem;
             color: #333;
+            font-weight: 600;
         }
 
-        .football_program_goals_section {
-            margin-bottom: 35px;
+        .coach-images-gallery {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
         }
 
-        .football_goals_title_heading {
-            font-size: 19px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            color: #000;
+        .coach-image-item {
+            flex: 0 0 auto;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .football_goals_list_items {
-            list-style: none;
-            max-width: 500px;
-            margin: 0 auto;
-            font-size: 14px;
-            line-height: 1.8;
-            color: #333;
+        .coach-image-wrapper {
+            width: 380px;
+            height: 250px;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .football_goals_list_items li {
-            margin-bottom: 3px;
-            position: relative;
-            padding-left: 0;
-            font-size: 17px;
+        .coach-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
         }
 
-        .football_goals_list_items li:before {
-            content: "• ";
-            color: #666;
+        .coach-image-item:hover .coach-image-wrapper {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
         }
 
-        .football_why_choose_section {
-            margin-bottom: 35px;
+        .coach-image-item:hover .coach-image {
+            transform: scale(1.05);
         }
 
-        .football_why_choose_title_heading {
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            color: #000;
-        }
-
-        .football_why_choose_text_content {
-            font-size: 14px;
-            line-height: 1.8;
-            max-width: 650px;
-            margin: 0 auto;
-            color: #333;
-        }
-
-        .football_skills_section_wrapper {
-            margin-bottom: 40px;
-        }
-
-        .football_skills_title_heading {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            color: #000;
-        }
-
-        .football_skills_list_items {
-            list-style: none;
-            max-width: 400px;
-            margin: 0 auto;
-            font-size: 14px;
-            line-height: 1.8;
-            color: #333;
-        }
-
-        .football_skills_list_items li {
-            margin-bottom: 3px;
-            position: relative;
-            padding-left: 0;
-            font-size: 17px;
-        }
-
-        .football_skills_list_items li:before {
-            content: "• ";
-            color: #666;
-        }
-
+        /* Mobile responsive */
         @media (max-width: 768px) {
-            .football_kickoff_program_section_main {
+            .coach-images-section {
                 padding: 40px 15px;
             }
 
-            .football_programs_header_title {
-                font-size: 12px;
+            .coach-images-gallery {
+                flex-direction: column;
+                gap: 25px;
+            }
+
+            .coach-image-wrapper {
+                width: 100%;
+                max-width: 400px;
+                height: 220px;
+            }
+
+            .coach-images-title {
+                font-size: 1.8rem;
                 margin-bottom: 30px;
-            }
-
-            .football_kickoff_program_main_title {
-                font-size: 20px;
-                margin-bottom: 40px;
-            }
-
-            .football_intro_title_heading,
-            .football_goals_title_heading,
-            .football_why_choose_title_heading,
-            .football_skills_title_heading {
-                font-size: 15px;
-            }
-
-            .football_intro_text_content,
-            .football_why_choose_text_content,
-            .football_goals_list_items,
-            .football_skills_list_items {
-                font-size: 13px;
-            }
-
-            .football_intro_text_content,
-            .football_why_choose_text_content {
-                max-width: 100%;
-            }
-
-            .football_goals_list_items,
-            .football_skills_list_items {
-                max-width: 100%;
-                text-align: left;
             }
         }
 
         @media (max-width: 480px) {
-            .football_kickoff_program_section_main {
-                padding: 30px 15px;
+            .coach-images-section {
+                padding: 30px 10px;
             }
 
-            .football_kickoff_program_main_title {
-                font-size: 18px;
-                line-height: 1.3;
+            .coach-image-wrapper {
+                height: 200px;
             }
 
-            .football_intro_text_content,
-            .football_why_choose_text_content {
-                line-height: 1.7;
+            .coach-images-title {
+                font-size: 1.6rem;
+            }
+        }
+
+        /* Tablet responsive */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .coach-images-gallery {
+                gap: 25px;
+            }
+
+            .coach-image-wrapper {
+                width: 300px;
+                height: 220px;
             }
         }
