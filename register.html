@@ -104,64 +104,254 @@
             }
         }
 
-        /* Base styling for the header */
         .page-header-cerv {
-            background-image: url('assets/image/Screen Shot 2020-01-21 at 4.27.02 pm.png');
-            background-position: center;
+            /* Container styling */
+            width: 100%;
+            min-height: max(500px, 50vh);
+            background-color: #000;
+            background-image: url('assets/image/Screen Shot 2020-01-21 at 4.24.40 pm.png');
             background-size: cover;
+            background-position: center 60%;
+            /* Shifted down to better center the football player's head */
             background-repeat: no-repeat;
-            height: 500px;
+
+            /* Flexbox for content positioning */
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             position: relative;
+
+            /* Text styling */
             color: white;
             text-align: center;
+            padding: clamp(15px, 4vw, 40px);
+            overflow: hidden;
+        }
+
+        .page-header-cerv {
+            /* Container styling */
+            width: 100%;
+            min-height: max(500px, 50vh);
+            background-color: #000;
+            background-image: url('assets/image/Screen Shot 2020-01-21 at 4.24.40 pm.png');
+            background-size: cover;
+            background-position: center 40%;
+            /* Shifted up to better center the football player's head */
+            background-repeat: no-repeat;
+
+            /* Flexbox for content positioning */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            /* Text styling */
+            color: white;
+            text-align: center;
+            padding: clamp(15px, 4vw, 40px);
+            overflow: hidden;
+        }
+
+        .page-header-cerv img {
+            /* Image sizing and positioning */
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            max-height: 100%;
+
+            /* Object-fit for proper scaling */
+            object-fit: cover;
+            object-position: center 40%;
+            /* Updated to shift image up and center the subject's head */
+
+            /* Positioning */
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+
+            /* Ensure image doesn't interfere with content */
+            pointer-events: none;
+        }
+
+        .page-header-cerv .content {
+            /* Content wrapper */
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            max-width: 800px;
+
+            /* Text shadow for better readability over image */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
 
         .page-header-cerv h1 {
-            font-size: 69px;
-            margin: 0;
-            color: #fff;
+            font-size: clamp(32px, 5vw, 48px);
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-weight: bold;
         }
 
-        .page-header-cerv a,
-        .page-header-cerv .main-color {
-            font-size: 16px;
-            color: #ccc;
-            text-decoration: none;
+        .page-header-cerv p {
+            font-size: clamp(16px, 2.5vw, 20px);
+            line-height: 1.4;
+            opacity: 0.9;
         }
 
-        /* Tablet responsiveness */
+        /* Tablet styles */
         @media (max-width: 768px) {
             .page-header-cerv {
-                height: 300px;
+                min-height: max(400px, 45vh);
+                padding: clamp(15px, 3vw, 25px);
+                background-position: center 35%;
+                /* Adjusted for tablet */
+            }
+
+            .page-header-cerv img {
+                object-position: center 35%;
             }
 
             .page-header-cerv h1 {
-                font-size: 42px;
+                font-size: clamp(28px, 5vw, 36px);
+                margin-bottom: 12px;
             }
 
-            .page-header-cerv a,
-            .page-header-cerv .main-color {
+            .page-header-cerv p {
+                font-size: clamp(14px, 3vw, 18px);
+            }
+        }
+
+        /* Mobile styles */
+        @media (max-width: 480px) {
+            .page-header-cerv {
+                min-height: max(300px, 40vh);
+                padding: clamp(10px, 3vw, 20px);
+                background-position: center 50%;
+                /* Adjusted for mobile */
+            }
+
+            .page-header-cerv img {
+                object-position: center 50%;
+            }
+
+            .page-header-cerv h1 {
+                font-size: clamp(24px, 6vw, 32px);
+                line-height: 1.3;
+                margin-bottom: 10px;
+            }
+
+            .page-header-cerv p {
+                font-size: clamp(13px, 4vw, 16px);
+            }
+        }
+
+        /* Extra small screens */
+        @media (max-width: 320px) {
+            .page-header-cerv {
+                min-height: max(280px, 35vh);
+                padding: 10px;
+                background-position: center 45%;
+            }
+
+            .page-header-cerv img {
+                object-position: center 45%;
+            }
+
+            .page-header-cerv h1 {
+                font-size: clamp(20px, 7vw, 28px);
+            }
+        }
+
+        /* Large screens - prevent excessive height */
+        @media (min-width: 1200px) {
+            .page-header-cerv {
+                min-height: min(600px, 60vh);
+                max-height: 80vh;
+                background-position: center 20%;
+                /* Better positioning for large screens */
+            }
+
+            .page-header-cerv img {
+                object-position: center 65%;
+            }
+        }
+
+        /* Alternative approach for better image scaling on very wide screens */
+        @media (min-aspect-ratio: 16/9) {
+            .page-header-cerv img {
+                object-fit: cover;
+                object-position: center 60%;
+            }
+        }
+
+        /* Submit button container - CENTER ALIGNED */
+        .submit-container {
+            text-align: center;
+            margin: 20px 0;
+            width: 100%;
+        }
+
+        /* Small submit button styling */
+        .submit-btn {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            border: none;
+            padding: 8px 25px;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(30, 58, 138, 0.3);
+            min-width: 100px;
+            text-transform: capitalize;
+        }
+
+        /* Hover effects */
+        .submit-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(30, 58, 138, 0.4);
+            background: linear-gradient(135deg, #3b82f6 0%, #1e3a8a 100%);
+        }
+
+        /* Active state */
+        .submit-btn:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 6px rgba(30, 58, 138, 0.3);
+        }
+
+        /* Focus state for accessibility */
+        .submit-btn:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(30, 58, 138, 0.5);
+        }
+
+        /* Orange bottom border to match your design */
+        .form-bottom-border {
+            height: 4px;
+            background: #f97316;
+            margin-top: 20px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .form-row {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .submit-btn {
+                padding: 10px 30px;
                 font-size: 14px;
             }
         }
 
-        /* Mobile responsiveness */
         @media (max-width: 480px) {
-            .page-header-cerv {
-                height: 300px;
-                padding: 0 15px;
-            }
-
-            .page-header-cerv h1 {
-                font-size: 28px;
-            }
-
-            .page-header-cerv a,
-            .page-header-cerv .main-color {
-                font-size: 22px;
+            .submit-btn {
+                padding: 12px 35px;
+                font-size: 14px;
             }
         }
     </style>
@@ -230,14 +420,15 @@
                         <li class="nav-item">
                             <a class="nav-link" href="Program.html"><span class="rolling-text">Program</span></a>
                         </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact-us.html"><span class="rolling-text">Contact Us</span></a>
-                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="registration-form.html"><span
                                     class="rolling-text">Register</span></a>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html"><span class="rolling-text">Contact Us</span></a>
+                        </li>
+                        
                     </ul>
                 </div>
 
@@ -297,6 +488,12 @@
                                                 data-text="Program">Program</span></a>
                                     </div>
                                 </li>
+                                <li>
+                                    <div class="o-hidden">
+                                        <a href="registration-form.html" class="link"><span class="fill-text"
+                                                data-text="Register">Register</span></a>
+                                    </div>
+                                </li>
 
                                 <li>
                                     <div class="o-hidden">
@@ -304,12 +501,7 @@
                                                 data-text="Contact Us">Contact Us</span></a>
                                     </div>
                                 </li>
-                                <li>
-                                    <div class="o-hidden">
-                                        <a href="registration-form.html" class="link"><span class="fill-text"
-                                                data-text="Register">Register</span></a>
-                                    </div>
-                                </li>
+                                
                             </ul>
                         </div>
                     </div>
@@ -317,9 +509,20 @@
                 </div>
             </div>
         </div>
+
         <div id="smooth-content">
             <main class="main-bg">
 
+                <header class="page-header-cerv bg-img section-padding" data-overlay-dark="2">
+                    <div class="container pt-100 ontop text-center">
+                        <h1 class="fz-100">Register</h1>
+                        <div class="mt-15">
+                            <a href="home-main.html">Home</a>
+                            <span class="padding-rl-20">|</span>
+                            <span class="main-color">Register</span>
+                        </div>
+                    </div>
+                </header>
 
                 <div class="main-bordered-container">
                     <!-- Social icons at top right -->
@@ -340,7 +543,7 @@
                             <div class="bar bar-short bar-medium"></div>
                         </div>
                         <div class="header-logo-center">
-                            <img src="assets/regist-image/AFG_Logo_NEW.png" alt="Club Logo" class="club-logo">
+                            <img src="assets/regist-image/TFA_Logo_Rev.png" alt="Club Logo" class="club-logo">
                         </div>
                         <div class="header-strips-right">
                             <div class="bar bar-short bar-medium"></div>
@@ -357,46 +560,48 @@
                     </div>
                     <div class="container form-container">
                         <h2 class="form-title">PLAYER REGISTRATION FORM</h2>
-                        <form>
+                        <form id="sheetdb-form" action="https://sheetdb.io/api/v1/hseajpjnkwobn" method="post">
                             <!-- PERSONAL DETAILS -->
                             <div class="section-title">PERSONAL DETAILS<span class="section-title-bar"></span></div>
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <label>FIRST NAME</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" name="data[FIRST NAME]" class="form-control">
                                 </div>
                                 <div class="col-md-6">
                                     <label>SURNAME</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" name="data[SURNAME]" class="form-control">
                                 </div>
                                 <div class="col-md-4">
                                     <label>DATE OF BIRTH</label>
-                                    <input type="date" class="form-control">
+                                    <input type="date" name="data[DATE OF BIRTH]" class="form-control">
                                 </div>
                                 <div class="col-md-2">
                                     <label>AGE</label>
-                                    <input type="number" class="form-control">
+                                    <input type="number" name="data[AGE]" class="form-control">
                                 </div>
                                 <div class="col-md-6">
                                     <label>FOOTBALL VICTORIA REGISTRATION No.</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" name="data[FOOTBALL VICTORIA REGISTRATION No]"
+                                        class="form-control">
                                 </div>
                                 <div class="col-md-6">
                                     <label>SCHOOL / COLLEGE</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" name="data[SCHOOL / COLLEGE]" class="form-control">
                                 </div>
                                 <div class="col-md-6">
                                     <label>COMMUNITY SOCCER CLUB (IF ANY)</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" name="data[COMMUNITY SOCCER CLUB (IF ANY)]" class="form-control">
                                 </div>
                                 <div class="col-12">
                                     <label>ANY KNOWN MEDICAL CONDITIONS? <span class="small">(IF YES - PLEASE
                                             SPECIFY)</span></label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" name="data[ANY KNOWN MEDICAL CONDITIONS?(IF YES - PLEASE
+                                            SPECIFY)]" class="form-control">
                                 </div>
                                 <div class="col-12">
                                     <label>SPECIAL MEDICAL REQUESTS</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" name="data[SPECIAL MEDICAL REQUESTS]" class="form-control">
                                 </div>
                             </div>
                             <!-- CONTACT DETAILS -->
@@ -404,20 +609,20 @@
                             <div class="row g-3">
                                 <div class="col-12">
                                     <label>ADDRESS NUMBER & STREET</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" name="data[ADDRESS NUMBER & STREET]" class="form-control">
                                 </div>
                                 <div class="col-md-6">
                                     <label>SUBURB & POSTCODE</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" name="data[SUBURB & POSTCODE]" class="form-control">
                                 </div>
                                 <div class="col-md-6">
                                     <label>MOBILE <span class="small">(OPTIONAL IF UNDER 16 YEARS OF AGE)</span></label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" name="data[MOBILE]" class="form-control">
                                 </div>
                                 <div class="col-12">
                                     <label>EMAIL ADDRESS <span class="small">(OPTIONAL IF UNDER 16 YEARS OF
                                             AGE)</span></label>
-                                    <input type="email" class="form-control">
+                                    <input type="email" name="data[EMAIL ADDRESS]" class="form-control">
                                 </div>
                             </div>
                             <!-- PARENT / GUARDIAN DETAILS -->
@@ -426,27 +631,31 @@
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <label>PARENT/GUARDIAN FIRST NAME</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" name="data[PARENT/GUARDIAN FIRST NAME]" class="form-control">
                                 </div>
                                 <div class="col-md-6">
                                     <label>PARENT/GUARDIAN SURNAME</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" name="data[PARENT/GUARDIAN SURNAME]" class="form-control">
                                 </div>
                                 <div class="col-md-6">
                                     <label>MOBILE NUMBER</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" name="data[MOBILE NUMBER]" class="form-control">
                                 </div>
                                 <div class="col-md-6">
                                     <label>EMAIL ADDRESS</label>
-                                    <input type="email" class="form-control">
+                                    <input type="email" name="data[EMAIL ADDRESS]" class="form-control">
                                 </div>
-                                <div class="col-md-6">
+                                <!-- <div class="col-md-6">
                                     <label>SIGNATURE</label>
                                     <input type="text" class="form-control">
                                 </div>
                                 <div class="col-md-6">
                                     <label>DATE</label>
                                     <input type="date" class="form-control">
+                                </div> -->
+                                <!-- Submit Button - CENTERED AND SMALL -->
+                                <div class="submit-container">
+                                    <button type="submit" class="submit-btn">submit</button>
                                 </div>
                             </div>
                         </form>
@@ -482,13 +691,13 @@
                             <div class="col-lg-4 col-md-6 md-mb15 d-flex align-items-center">
                                 <ul class="rest d-flex align-items-center">
                                     <li class="cursor-pointer">
-                                        <a href="https://www.facebook.com/profile.php?id=61575706232990"
-                                            class="hover-anim" target="_blank"><i class="fab fa-facebook-f"></i> </a>
+                                        <a href="#" class="hover-anim" target="_blank"><i class="fab fa-facebook-f"></i>
+                                        </a>
                                     </li>
-                                    <li class="cursor-pointer ml-30">
+                                    <!-- <li class="cursor-pointer ml-30">
                                         <a href="https://www.linkedin.com/company/cbd-corporation/posts/?feedView=all&viewAsMember=true"
                                             class="hover-anim" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                    </li>
+                                    </li> -->
                                     <li class="cursor-pointer ml-30">
                                         <a href="#0" class="hover-anim"><i class="fab fa-instagram"></i></a>
                                     </li>
@@ -519,6 +728,44 @@
             </footer>
         </div>
     </div>
+    <script>
+        //  var form = document.getElementById('sheetdb-form');
+        // form.addEventListener("submit", e => {
+        //     e.preventDefault();
+        //     fetch(form.action, {
+        //         method: "POST",
+        //         body: new FormData(document.getElementById("sheetdb-form")),
+        //     }).then(
+        //         response => response.json()
+        //     ).then((html) => {
+        //         alert('Submitted !! 😊 Thank you ' + document.getElementById('FIRST NAME').value)
+        //         window.location.href = '';
+        //         location.reload();
+        //     });
+        // });
+        var form = document.getElementById('sheetdb-form');
+
+        form.addEventListener("submit", e => {
+            e.preventDefault();
+
+            fetch(form.action, {
+                method: "POST",
+                body: new FormData(document.getElementById("sheetdb-form")),
+            }).then(
+                response => response.json()
+            ).then((html) => {
+                // First name get karo
+                var firstName = document.querySelector('input[name="data[FIRST NAME]"]').value || 'User';
+
+                // Success page pe redirect karo with name parameter
+                window.location.href = 'success.html?name=' + encodeURIComponent(firstName);
+
+            }).catch(error => {
+                console.error('Error:', error);
+                alert('Something went wrong. Please try again.');
+            });
+        });
+    </script>
 
     <!-- jQuery -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>

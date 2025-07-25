@@ -387,6 +387,138 @@
                 width: 35%;
             }
         }
+
+        .page-header-cerv img {
+            /* Image sizing and positioning */
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            max-height: 100%;
+
+            /* Object-fit for proper scaling */
+            object-fit: cover;
+            object-position: center 40%;
+            /* Updated to shift image up and center the subject's head */
+
+            /* Positioning */
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+
+            /* Ensure image doesn't interfere with content */
+            pointer-events: none;
+        }
+
+        .page-header-cerv .content {
+            /* Content wrapper */
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            max-width: 800px;
+
+            /* Text shadow for better readability over image */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .page-header-cerv h1 {
+            font-size: clamp(32px, 5vw, 48px);
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .page-header-cerv p {
+            font-size: clamp(16px, 2.5vw, 20px);
+            line-height: 1.4;
+            opacity: 0.9;
+        }
+
+        /* Tablet styles */
+        @media (max-width: 768px) {
+            .page-header-cerv {
+                min-height: max(400px, 45vh);
+                padding: clamp(15px, 3vw, 25px);
+                background-position: center 35%;
+                /* Adjusted for tablet */
+            }
+
+            .page-header-cerv img {
+                object-position: center 35%;
+            }
+
+            .page-header-cerv h1 {
+                font-size: clamp(28px, 5vw, 36px);
+                margin-bottom: 12px;
+            }
+
+            .page-header-cerv p {
+                font-size: clamp(14px, 3vw, 18px);
+            }
+        }
+
+        /* Mobile styles */
+        @media (max-width: 480px) {
+            .page-header-cerv {
+                min-height: max(300px, 40vh);
+                padding: clamp(10px, 3vw, 20px);
+                background-position: center 50%;
+                /* Adjusted for mobile */
+            }
+
+            .page-header-cerv img {
+                object-position: center 50%;
+            }
+
+            .page-header-cerv h1 {
+                font-size: clamp(24px, 6vw, 32px);
+                line-height: 1.3;
+                margin-bottom: 10px;
+            }
+
+            .page-header-cerv p {
+                font-size: clamp(13px, 4vw, 16px);
+            }
+        }
+
+        /* Extra small screens */
+        @media (max-width: 320px) {
+            .page-header-cerv {
+                min-height: max(280px, 35vh);
+                padding: 10px;
+                background-position: center 45%;
+            }
+
+            .page-header-cerv img {
+                object-position: center 45%;
+            }
+
+            .page-header-cerv h1 {
+                font-size: clamp(20px, 7vw, 28px);
+            }
+        }
+
+        /* Large screens - prevent excessive height */
+        @media (min-width: 1200px) {
+            .page-header-cerv {
+                min-height: min(600px, 60vh);
+                max-height: 80vh;
+                background-position: center 40%;
+                /* Better positioning for large screens */
+            }
+
+            .page-header-cerv img {
+                object-position: center 65%;
+            }
+        }
+
+        /* Alternative approach for better image scaling on very wide screens */
+        @media (min-aspect-ratio: 16/9) {
+            .page-header-cerv img {
+                object-fit: cover;
+                object-position: center 60%;
+            }
+        }
     </style>
 
     </style>
@@ -510,11 +642,12 @@
                                 </div>
                             </div>
                         </li> -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact-us.html"><span class="rolling-text">Contact Us</span></a>
-                        </li>
+                       
                         <li class="nav-item">
                             <a class="nav-link" href="register.html"><span class="rolling-text">Register</span></a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html"><span class="rolling-text">Contact Us</span></a>
                         </li>
                     </ul>
                 </div>
@@ -595,16 +728,17 @@
                                         </ul>
                                     </div>
                                 </li> -->
-                                <li>
-                                    <div class="o-hidden">
-                                        <a href="contact-us.html" class="link"><span class="fill-text"
-                                                data-text="Contact Us">Contact Us</span></a>
-                                    </div>
-                                </li>
+                                
                                 <li>
                                     <div class="o-hidden">
                                         <a href="register.html" class="link"><span class="fill-text"
                                                 data-text="Re">Register</span></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="o-hidden">
+                                        <a href="contact-us.html" class="link"><span class="fill-text"
+                                                data-text="Contact Us">Contact Us</span></a>
                                     </div>
                                 </li>
 
@@ -669,8 +803,7 @@
                         </div>
                     </div>
                 </header> -->
-                <header class="page-header-cerv bg-img section-padding" style="padding-top: 200px;"
-                    data-overlay-dark="2">
+                <header class="page-header-cerv bg-img section-padding" data-overlay-dark="2">
                     <div class="container pt-100 ontop text-center">
                         <h1 class="fz-100">Program</h1>
                         <div class="mt-15">
@@ -739,43 +872,52 @@
                 </section>
 
 
-                <section class="section-padding">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-12">
-                                <div class="row">
-                                    <div class="col-lg-5">
-                                        <h4 class="mb-50">Football Kick-Off (Ages 5–6)</h4>
-                                    </div>
-                                    <div class="col-lg-7">
-                                        <div class="text">
+                <section class="football_kickoff_program_section_main">
+                    <h2 class="football_programs_header_title">PROGRAMS</h2>
 
-                                            <p class="fz-18">
+                    <h1 class="football_kickoff_program_main_title">FOOTBALL KICK OFF (AGES 5-6)</h1>
 
-                                                Football Kick-Off (Ages 5–6)
-                                                Introduction to the World Game
-                                                Our Football Initiation Program is designed to help young children
-                                                explore movement, coordination, and teamwork through fun, ball-focused
-                                                activities.
+                    <div class="football_intro_section_wrapper">
+                        <h3 class="football_intro_title_heading">Introduction to the World Game</h3>
+                        <p class="football_intro_text_content">
+                            Our Football Initiation Program is designed to help young children explore movement,
+                            coordination,
+                            and teamwork through fun, ball-based activities.
+                        </p>
+                    </div>
 
-                                                Why Choose Our Program?
-                                                Experienced Coaching – Led by Sat, a specialist in the Discovery and
-                                                Skill Acquisition phases, with over 15 years of coaching experience.
+                    <div class="football_program_goals_section">
+                        <h3 class="football_goals_title_heading">Through the program, children will:</h3>
+                        <ul class="football_goals_list_items">
+                            <li>Build confidence in physical activity</li>
+                            <li>Learn to work and play in small groups</li>
+                            <li>Improve social awareness and movement</li>
+                            <li>Begin understanding ball control, movement, and directions</li>
+                        </ul>
+                    </div>
 
-                                                Quality Facilities – Training takes place on a safe, indoor futsal court
-                                                keeping play continuous and focused.
+                    <div class="football_why_choose_section">
+                        <h3 class="football_why_choose_title_heading">Why Choose Our Program?</h3>
+                        <p class="football_why_choose_text_content">
+                            Experienced Coaching - Led by SFA, a specialist in Pre-Discovery and Skill Acquisition
+                            phases, with over 15 years of coaching experience.
+                            Quality Environment - Training takes place in a welcoming and safe space where each
+                            participant continues and is focused.
+                            Small Group Focus - Low player-to-coach ratios ensure personalized attention and effective
+                            live learning.
+                            Engaging Experience - Kids learn through play games, seasonal activities, learning through
+                            play, not working in lines.
+                        </p>
+                    </div>
 
-                                                Small Group Focus – Low player-to-coach ratios ensure personalised
-                                                attention and effective learning.
-
-                                                Engaging Sessions – Kids are always active with the ball, learning
-                                                through play, not waiting in lines.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="football_skills_section_wrapper">
+                        <h3 class="football_skills_title_heading">Skills Developed</h3>
+                        <ul class="football_skills_list_items">
+                            <li>Dribbling, receiving, developing, and shooting</li>
+                            <li>Ball control on the ground and in the air</li>
+                            <li>Coaching and defending</li>
+                            <li>Teamwork and communication</li>
+                        </ul>
                     </div>
                 </section>
                 <div class="img-column">
@@ -796,43 +938,38 @@
                 </div>
 
                 <!--section 2-->
-                <section class="section-padding">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-12">
-                                <div class="row">
-                                    <div class="col-lg-5">
-                                        <h4 class="mb-50">Football Basics (Ages 7–9)</h4>
-                                    </div>
-                                    <div class="col-lg-7">
-                                        <div class="text">
+                <section class="football_kickoff_program_section_main">
+                    
+                     <h2 class="football_programs_header_title"></h2>
+                    <h1 class="football_kickoff_program_main_title">FOOTBALL BASICS 7-9 YEARS OLD</h1>
 
-                                            <p class="fz-18">
-
-                                                Introduction to the World Game
-                                                Our Football Initiation Program is designed to help young children
-                                                explore movement, coordination, and teamwork through fun, ball-focused
-                                                activities.
-
-                                                Why Choose Our Program?
-                                                Experienced Coaching – Led by Sat, a specialist in the Discovery and
-                                                Skill Acquisition phases, with over 15 years of coaching experience.
-
-                                                Quality Facilities – Training takes place on a safe, indoor futsal court
-                                                keeping play continuous and focused.
-
-                                                Small Group Focus – Low player-to-coach ratios ensure personalised
-                                                attention and effective learning.
-
-                                                Engaging Sessions – Kids are always active with the ball, learning
-                                                through play, not waiting in lines.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="football_intro_section_wrapper">
+                        <h3 class="football_intro_title_heading">Building Strong Football Foundations</h3>
+                        <p class="football_intro_text_content">
+                            At this stage, children are introduced to a wider range of movement and core football scenarios, helping them develop key skills in a fun and engaging environment. We understand that players at this age are still developing socially and often prefer to have the ball themselves. That’s why our program is designed to keep each child actively involved, focusing on ball control and individual play before introducing more teamwork concepts.
+                        </p>
                     </div>
+
+                    <div class="football_program_goals_section">
+                        <h3 class="football_goals_title_heading">Core Development:</h3>
+                        <ul class="football_goals_list_items">
+                            <li>Dribbling and ball control games</li>
+                            <li>Passing, receiving, and shooting drills</li>
+                            <li>Tackling and ball-winning activities</li>
+                            <li>Small-sided games (2v2, 2v1) to promote decision-making</li>
+                        </ul>  
+                    </div>
+
+                    <div class="football_why_choose_section">
+                        
+                        <p class="football_why_choose_text_content">
+                            This program lays the groundwork for more advanced tactical play and helps young players transition smoothly into the next stage of development.
+                        </p>
+                    </div>
+
+                    
+
+                    
                 </section>
                 <div class="img-column">
                     <div class="container">
@@ -853,44 +990,38 @@
 
 
                 <!--section 3-->
-                <section class="section-padding">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-12">
-                                <div class="row">
-                                    <div class="col-lg-5">
-                                        <h4 class="mb-50">Skills Development (Ages 10–11)</h4>
-                                    </div>
-                                    <div class="col-lg-7">
-                                        <div class="text">
+               <section class="football_kickoff_program_section_main">
+                    <h2 class="football_programs_header_title"></h2>
 
-                                            <p class="fz-18">
+                    <h1 class="football_kickoff_program_main_title">SKILLS DEVELOPMENT 10-11 YEARS OLD</h1>
 
-                                                Sharpening Football Intelligence
-                                                Often called the “golden age of motor learning,” this stage is marked by
-                                                high motivation, growing commitment, and a desire to perform well.
-                                                Players are eager to improve, work hard in training, and demonstrate
-                                                their skills in games.
-
-                                                Building on the fundamentals from the Football Basics Program, players
-                                                at this level are ready to handle more complex game situations and
-                                                decision-making.
-
-                                                Football is about reading the game and reacting effectively. We focus on
-                                                developing game intelligence through three key scenarios:
-
-                                                Loose-Ball Games – Competing for possession when the ball is free;
-                                                winning loose balls often decides the outcome.
-
-                                                Attacking Games – Making smart decisions while in possession and
-                                                creating scoring opportunities.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="football_intro_section_wrapper">
+                        <h3 class="football_intro_title_heading">Building Strong Football Foundations</h3>
+                        <p class="football_intro_text_content">
+                            Often called the “golden age of motor learning,” this stage is marked by high motivation, growing commitment, and a desire to perform well. Players are eager to improve, work hard in training, and demonstrate their skills in games. Building on the fundamentals from the Football Basics Program, players at this level are ready to handle more complex game situations and decision-making. Football is about reading the game and reacting effectively. We focus on developing game intelligence through three key scenarios:
+                        </p>
                     </div>
+
+                    <div class="football_program_goals_section">
+                        <h3 class="football_goals_title_heading"></h3>
+                        <ul class="football_goals_list_items">
+                            <li><b>Loose-Ball Games – </b>Competing for possession when the ball is free; winning loose balls often decides the outcome.</li>
+                            <li> <b>Attacking Games –</b> Making smart decisions while in possession and creating scoring opportunities.</li>
+                            <li><b> Defensive Games –</b> Organising quickly without the ball to block, press, and prevent goals.</li>
+                            
+                        </ul>
+                    </div>
+                       
+                    <div class="football_why_choose_section">
+                        
+                        <p class="football_why_choose_text_content">
+                           Players enhance their ability to scan the field, assess teammates and opponents, and respond based on speed, direction, and space—essential skills for tactical growth.
+                        </p>
+                    </div>
+
+                   
+
+                   
                 </section>
                 <div class="img-column">
                     <div class="container">
@@ -910,42 +1041,54 @@
                 </div>
 
                 <!--section 4-->
-                <section class="section-padding">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-12">
-                                <div class="row">
-                                    <div class="col-lg-5">
-                                        <h4 class="mb-50">Game Development (Ages 12–14+)</h4>
-                                    </div>
-                                    <div class="col-lg-7">
-                                        <div class="text">
+                <section class="football_kickoff_program_section_main">
+                    <h2 class="football_programs_header_title"></h2>
 
-                                            <p class="fz-18">
+                    <h1 class="football_kickoff_program_main_title">GAME DEVELOPMENT 12-14+ YEARS OLD</h1>
 
-                                                Mastering the Full Game
-                                                At this stage, players develop a lasting passion for football through
-                                                engaging, well-structured programs that match their interests and goals.
+                    <div class="football_intro_section_wrapper">
+                        <h3 class="football_intro_title_heading"></h3>
+                        <p class="football_intro_text_content">
+                            At this stage, players develop a lasting passion for football through engaging, well-structured programs that match their interests and goals. Building on the Football Skills Program, players are now ready for more advanced, tactical play. They respond well to teamwork and collaborative training, making this an ideal age to strengthen team concepts.
+                        </p>
+                    </div>
 
-                                                Building on the Football Skills Program, players are now ready for more
-                                                advanced, tactical play. They respond well to teamwork and collaborative
-                                                training, making this an ideal age to strengthen team concepts.
+                    <div class="football_program_goals_section">
+                        <h3 class="football_goals_title_heading">Intelligence In Attack.</h3>
+                        <ul class="football_goals_list_items">
+                            <li> The positional attack (building up from the back): its start and progression</li>
+                            <li> Keeping possession of the ball</li>
+                            <li>Attacking from the midfield</li>
+                            <li>The 2v1 situation</li>
+                            <li>First-time play</li>
+                            <li>The counter-attack</li>
+                            <li> Intelligent passing</li>
+                            <li> Correct techniques and tactics in receiving and controlling the ball</li>
+                            <li> The capacity to play through passes</li>
+                            <li>Finishing</li>
+                            <li> Attacking under pressure</li>
+                            
+                        </ul>
+                    </div>
 
-                                                Program Focus:
-                                                Intelligence In Attack
+                    
 
-                                                • The positional attack (building up from the back): its start and
-                                                progression
-
-                                                • Keeping possession of the ball
-
-                                                • Attacking from the midfield
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="football_skills_section_wrapper">
+                        <h3 class="football_skills_title_heading">Intelligence in Defense.</h3>
+                        <ul class="football_skills_list_items">
+                            <li> Individual defending: Approaching and closing down the ball carrier</li>
+                            <li> Cover</li>
+                            <li> Pressing</li>
+                            <li> Anticipation</li>
+                            <li>  Defending under pressure</li>
+                            <li> Defending counterattacks</li>
+                        </ul>
+                    </div>
+                    <div class="football_skills_section_wrapper">
+                        <h3 class="football_skills_title_heading">Developing Individual Game</h3>
+                        <p class="football_intro_text_content">
+                           Dominating 1v1Mastery of 1v1 situations
+                        </p>
                     </div>
                 </section>
                 <div class="img-column">
@@ -1110,13 +1253,10 @@
                             <div class="col-lg-4 col-md-6 md-mb15 d-flex align-items-center">
                                 <ul class="rest d-flex align-items-center">
                                     <li class="cursor-pointer">
-                                        <a href="https://www.facebook.com/profile.php?id=61575706232990"
+                                        <a href="#"
                                             class="hover-anim" target="_blank"><i class="fab fa-facebook-f"></i> </a>
                                     </li>
-                                    <li class="cursor-pointer ml-30">
-                                        <a href="https://www.linkedin.com/company/cbd-corporation/posts/?feedView=all&viewAsMember=true"
-                                            class="hover-anim" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                    </li>
+                                   
                                     <li class="cursor-pointer ml-30">
                                         <a href="#0" class="hover-anim"><i class="fab fa-instagram"></i></a>
                                     </li>

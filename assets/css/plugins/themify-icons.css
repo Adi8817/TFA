@@ -295,6 +295,7 @@
 }
 .ti-arrow-top-right:before {
 	content: "\e65a";
+	margin-left: 24px;
 }
 .ti-arrow-top-left:before {
 	content: "\e65b";
