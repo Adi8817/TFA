@@ -82,10 +82,10 @@
         }
 
         .logo.icon-img-100 img {
-  max-width: 150px !important;
-  width: auto !important;
-  height: auto !important;
-}
+            max-width: 150px !important;
+            width: auto !important;
+            height: auto !important;
+        }
 
 
         /* Mobile View - Small devices (phones) */
@@ -111,156 +111,192 @@
 
         /* Base styling for the header */
         .page-header-cerv {
-    /* Container styling */
-    width: 100%;
-    min-height: max(500px, 50vh);
-    background-color: #000;
-    background-image: url('assets/image/Screen Shot 2020-01-21 at 4.24.40 pm.png');
-    background-size: cover;
-    background-position: center 40%; /* Shifted up to better center the football player's head */
-    background-repeat: no-repeat;
-    
-    /* Flexbox for content positioning */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    
-    /* Text styling */
-    color: white;
-    text-align: center;
-    padding: clamp(15px, 4vw, 40px);
-    overflow: hidden;
-}
+            /* Container styling */
+            width: 100%;
+            min-height: max(500px, 50vh);
+            background-color: #000;
+            background-image: url('assets/image/Screen Shot 2020-01-21 at 4.24.40 pm.png');
+            background-size: cover;
+            background-position: center 40%;
+            /* Shifted up to better center the football player's head */
+            background-repeat: no-repeat;
 
-.page-header-cerv img {
-    /* Image sizing and positioning */
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    max-height: 100%;
-    
-    /* Object-fit for proper scaling */
-    object-fit: cover;
-    object-position: center 40%; /* Updated to shift image up and center the subject's head */
-    
-    /* Positioning */
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    
-    /* Ensure image doesn't interfere with content */
-    pointer-events: none;
-}
+            /* Flexbox for content positioning */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
 
-.page-header-cerv .content {
-    /* Content wrapper */
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    max-width: 800px;
-    
-    /* Text shadow for better readability over image */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
+            /* Text styling */
+            color: white;
+            text-align: center;
+            padding: clamp(15px, 4vw, 40px);
+            overflow: hidden;
+        }
 
-.page-header-cerv h1 {
-    font-size: clamp(32px, 5vw, 48px);
-    line-height: 1.2;
-    margin-bottom: 15px;
-    font-weight: bold;
-}
+        .page-header-cerv img {
+            /* Image sizing and positioning */
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            max-height: 100%;
 
-.page-header-cerv p {
-    font-size: clamp(16px, 2.5vw, 20px);
-    line-height: 1.4;
-    opacity: 0.9;
-}
+            /* Object-fit for proper scaling */
+            object-fit: cover;
+            object-position: center 40%;
+            /* Updated to shift image up and center the subject's head */
 
-/* Tablet styles */
-@media (max-width: 768px) {
-    .page-header-cerv {
-        min-height: max(400px, 45vh);
-        padding: clamp(15px, 3vw, 25px);
-        background-position: center 35%; /* Adjusted for tablet */
-    }
-    
-    .page-header-cerv img {
-        object-position: center 35%;
-    }
-    
-    .page-header-cerv h1 {
-        font-size: clamp(28px, 5vw, 36px);
-        margin-bottom: 12px;
-    }
-    
-    .page-header-cerv p {
-        font-size: clamp(14px, 3vw, 18px);
-    }
-}
+            /* Positioning */
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
 
-/* Mobile styles */
-@media (max-width: 480px) {
-    .page-header-cerv {
-        min-height: max(300px, 40vh);
-        padding: clamp(10px, 3vw, 20px);
-        background-position: center 50%; /* Adjusted for mobile */
-    }
-    
-    .page-header-cerv img {
-        object-position: center 50%;
-    }
-    
-    .page-header-cerv h1 {
-        font-size: clamp(24px, 6vw, 32px);
-        line-height: 1.3;
-        margin-bottom: 10px;
-    }
-    
-    .page-header-cerv p {
-        font-size: clamp(13px, 4vw, 16px);
-    }
-}
+            /* Ensure image doesn't interfere with content */
+            pointer-events: none;
+        }
 
-/* Extra small screens */
-@media (max-width: 320px) {
-    .page-header-cerv {
-        min-height: max(280px, 35vh);
-        padding: 10px;
-        background-position: center 45%;
-    }
-    
-    .page-header-cerv img {
-        object-position: center 45%;
-    }
-    
-    .page-header-cerv h1 {
-        font-size: clamp(20px, 7vw, 28px);
-    }
-}
+        .page-header-cerv .content {
+            /* Content wrapper */
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            max-width: 800px;
 
-/* Large screens - prevent excessive height */
-@media (min-width: 1200px) {
-    .page-header-cerv {
-        min-height: min(600px, 60vh);
-        max-height: 80vh;
-        background-position: center 20%; /* Better positioning for large screens */
-    }
-    
-    .page-header-cerv img {
-        object-position: center 65%;
-    }
-}
+            /* Text shadow for better readability over image */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
 
-/* Alternative approach for better image scaling on very wide screens */
-@media (min-aspect-ratio: 16/9) {
-    .page-header-cerv img {
-        object-fit: cover;
-        object-position: center 60%;
-    }
-}
+        .page-header-cerv h1 {
+            font-size: clamp(32px, 5vw, 48px);
+            line-height: 1.2;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .page-header-cerv p {
+            font-size: clamp(16px, 2.5vw, 20px);
+            line-height: 1.4;
+            opacity: 0.9;
+        }
+
+        /* Tablet styles */
+        @media (max-width: 768px) {
+            .page-header-cerv {
+                min-height: max(400px, 45vh);
+                padding: clamp(15px, 3vw, 25px);
+                background-position: center 35%;
+                /* Adjusted for tablet */
+            }
+
+            .page-header-cerv img {
+                object-position: center 35%;
+            }
+
+            .page-header-cerv h1 {
+                font-size: clamp(28px, 5vw, 36px);
+                margin-bottom: 12px;
+            }
+
+            .page-header-cerv p {
+                font-size: clamp(14px, 3vw, 18px);
+            }
+        }
+
+        /* Mobile styles */
+        @media (max-width: 480px) {
+            .page-header-cerv {
+                min-height: max(300px, 40vh);
+                padding: clamp(10px, 3vw, 20px);
+                background-position: center 50%;
+                /* Adjusted for mobile */
+            }
+
+            .page-header-cerv img {
+                object-position: center 50%;
+            }
+
+            .page-header-cerv h1 {
+                font-size: clamp(24px, 6vw, 32px);
+                line-height: 1.3;
+                margin-bottom: 10px;
+            }
+
+            .page-header-cerv p {
+                font-size: clamp(13px, 4vw, 16px);
+            }
+        }
+
+        /* Extra small screens */
+        @media (max-width: 320px) {
+            .page-header-cerv {
+                min-height: max(280px, 35vh);
+                padding: 10px;
+                background-position: center 45%;
+            }
+
+            .page-header-cerv img {
+                object-position: center 45%;
+            }
+
+            .page-header-cerv h1 {
+                font-size: clamp(20px, 7vw, 28px);
+            }
+        }
+
+        /* Large screens - prevent excessive height */
+        @media (min-width: 1200px) {
+            .page-header-cerv {
+                min-height: min(600px, 60vh);
+                max-height: 80vh;
+                background-position: center 20%;
+                /* Better positioning for large screens */
+            }
+
+            .page-header-cerv img {
+                object-position: center 65%;
+            }
+        }
+
+        /* Alternative approach for better image scaling on very wide screens */
+        @media (min-aspect-ratio: 16/9) {
+            .page-header-cerv img {
+                object-fit: cover;
+                object-position: center 60%;
+            }
+        }
+
+        .tfa-map {
+            width: 100%;
+            margin: 40px 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .tfa-map iframe {
+            display: block;
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+
+        @media (min-width: 768px) {
+            .tfa-map {
+                margin: 60px 0;
+            }
+
+            .tfa-map iframe {
+                height: 400px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .tfa-map iframe {
+                height: 450px;
+            }
+        }
     </style>
     <script>
         function updateTime() {
@@ -388,7 +424,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="contact-us.html"><span class="rolling-text">Contact Us</span></a>
                         </li>
-                        
+
                     </ul>
                 </div>
 
@@ -468,8 +504,8 @@
                                         </ul>
                                     </div>
                                 </li> -->
-                                
-                                 <li>
+
+                                <li>
                                     <div class="o-hidden">
                                         <a href="register.html" class="link"><span class="fill-text"
                                                 data-text="Register">Register</span></a>
@@ -481,7 +517,7 @@
                                                 data-text="Contact Us">Contact Us</span></a>
                                     </div>
                                 </li>
-                               
+
                             </ul>
                         </div>
                     </div>
@@ -683,24 +719,32 @@
                         </div>
                     </div>
                 </section>
+
+                <section class="tfa-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3155.4305939272836!2d144.73617917588155!3d-37.733041271995845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6f5b70a8e06cf%3A0x68ba8c56d9d0c7cc!2sCaroline%20Springs%20Leisure%20Centre!5e0!3m2!1sen!2sin!4v1753678096689!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </section>
             </main>
             <footer class="min-footer2">
                 <div class="footer-container">
                     <div class="container pt-60 pb-25 ontop">
-                        <div class="text-center mb-30">
+                        <!-- <div class="text-center mb-30">
                             <h6 class="sub-title mb-15 main-color">Get In Touch</h6>
                             <h2 class="fz-100 text-u ls1">
                                 <a href="javascript:void(0)">Let's Connect</a>
                             </h2>
-                        </div>
+                        </div> -->
                         <div class="row mt-40 pt-25 bord-thin-top">
                             <div class="col-lg-4 col-md-6 md-mb15 d-flex align-items-center">
                                 <ul class="rest d-flex align-items-center">
                                     <li class="cursor-pointer">
-                                        <a href="#"
-                                            class="hover-anim" target="_blank"><i class="fab fa-facebook-f"></i> </a>
+                                        <a href="#" class="hover-anim" target="_blank"><i class="fab fa-facebook-f"></i>
+                                        </a>
                                     </li>
-                                    
+
                                     <li class="cursor-pointer ml-30">
                                         <a href="#0" class="hover-anim"><i class="fab fa-instagram"></i></a>
                                     </li>
